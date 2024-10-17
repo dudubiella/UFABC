@@ -4,8 +4,11 @@ distancias = [[16, 17.5, 13.8], [15.7, 17.6, 14], [28.8, 30, 26.4], [17.4, 19.2,
 def media(lista):
     return [sum(a)/len(a) for a in lista]
 
-def incert(list, media):
-    return (sum([(a - media) ** 2 for a in list]) / (len(list) - 1)) ** 0.5
+def incert(list, media, n = False):
+    if n:
+        return (sum([(a - media) ** 2 for a in list]) / (len(list) * (len(list) - 1))) ** 0.5
+    else:
+        return (sum([(a - media) ** 2 for a in list]) / (len(list) - 1)) ** 0.5
 
 def vel(medt, desvt, medd, desvd):
     return (medd/medt) * ((desvt/medt) ** 2 + (desvd/medd) ** 2) ** 0.5
@@ -17,7 +20,10 @@ def calculos(valores):
     md = media(valores)
     print(f"media das medições:\n{md}")
     print("incerteza das medição:")
-    inser = [ incert(t,md[n]) for n, t in enumerate(valores)]
+    if len(valores) == 1:
+        inser = [ incert(t,md[n], True) for n, t in enumerate(valores)]
+    else:
+        inser = [ incert(t,md[n]) for n, t in enumerate(valores)]
     print(inser)
     return md, inser
 
@@ -28,11 +34,20 @@ medd, desvd = calculos(distancias)
 print("\n\nVELOCIDADES\n")
 velo = [d/t for t, d in zip(medt, medd)]
 desvvel = [vel(t, de, d, dd) for t, de, d, dd in zip(medt, desvt, medd, desvd)]
-print(velo, desvvel)
+print(velo, "\n", desvvel)
 print("\n\nVELOCIDADE TOTAL\n")
 medvelo, desvvelo = calculos([velo])
 print("\n\nACUMULADOS\n")
 i = 0
 while (i < 4):
-    print(f"S e T relativos")
-    sum([for a in range(i)])
+    print(f"\nS relativos {i + 1}")
+    distrel = sum([medd[a] for a in range(i + 1)])
+    print(distrel)
+    insetdistrel = (sum([desvd[a] ** 2 for a in range(i + 1)])) ** 0.5
+    print(insetdistrel)
+    print(f"\nT relativos {i + 1}")
+    temporel = sum([medt[a] for a in range(i + 1)])
+    print(temporel)
+    insettemporel = (sum([desvt[a] ** 2 for a in range(i + 1)])) ** 0.5
+    print(insettemporel)
+    i += 1
