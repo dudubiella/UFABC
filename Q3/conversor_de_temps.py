@@ -14,7 +14,7 @@ def converte(x, de):
     else:
         return converteFC(x)
 
-def convertetemps(de = 'Celsius', para = 'Fahrenheit'):
+def convertetemps(tipo):
     if tipo == 1:
         de = 'Celsius'
         para = 'Fahrenheit'
