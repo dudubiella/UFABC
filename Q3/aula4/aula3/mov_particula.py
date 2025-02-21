@@ -22,5 +22,3 @@ def fonc3grau(a: float, b: float, c: float, d: float, t1: float, t2: float) -> f
         if p1 < p < p2 and min_global(a, b, c, d, p):
             pmin = p
     return pmin
-
-print(fonc3grau(1,1,1,1,1,1))
