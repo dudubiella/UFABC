@@ -1,16 +1,4 @@
-import math
-
-def bhaskara (a: float, b: float, c: float) -> (int, float, float):
-  delta = b*b - 4*a*c
-  if delta < 0:
-    return (0, math.nan, math.nan)
-  elif delta == 0:
-    z = -b/ (2*a)
-    return (1, z, z)
-  else:
-    return (2, (-b - math.sqrt(delta))/(2*a), (-b + math.sqrt(delta))/(2*a))
-
-
+from aula2.bhaskara import bhaskara
 
 def pos (a: float, b: float, c: float, d: float, t: float) -> float:
     return a * t ** 3 + b * t * t + c * t + d
@@ -34,3 +22,5 @@ def fonc3grau(a: float, b: float, c: float, d: float, t1: float, t2: float) -> f
         if p1 < p < p2 and min_global(a, b, c, d, p):
             pmin = p
     return pmin
+
+print(fonc3grau(1,1,1,1,1,1))
