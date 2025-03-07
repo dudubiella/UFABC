@@ -1,19 +1,17 @@
-def busca_v1 (l: list, n: int) -> int:
-    if n > l[-1]: return len(l)
-    copia, r = l, 0
-    while copia != []:
-        tamanho = len(copia)
-        i = int(tamanho / 2)
-        print(copia, i, tamanho, r)
-        if l[i] > n:
-            copia = copia[i:]
-            print(copia, i)
-        elif l[i] < n:
-            copia = copia[i - 1:]
-            print(copia, i)
-    return len(l)
+def busca_ord (l: list, n: int) -> int:
+    i = 0
+    while l != []:
+        if n > l[-1] or n < l[0]: return -1
+        mid = int (len (l) / 2)
+        m = l[mid]
+        if m < n: l, i = l[mid + 1:], i + mid + 1
+        elif m > n: l = l[:mid]
+        else: return i + mid
 
-def busca_v2 (l: list, n: int) -> int:
-    return
-
-print(busca_v1([2,4,6,7,8,9,11,13,15,17,19], 13))
+def busca_ord_rec (l: list, n: int, i: int = 0) -> int:
+    if n > l[-1] or n < l[0]: return -1
+    mid = int (len (l) / 2)
+    m = l[mid]
+    if m < n: return busca_ord_rec (l[mid + 1:], n, i + mid + 1)
+    if m > n: return busca_ord_rec (l[:mid], n, i)
+    return i + mid

@@ -8,5 +8,3 @@ def primolog(n):
             j += 1
         c += 1
     return [a for a in range(len(l)) if l[a]]
-print(primolog(9))
-
