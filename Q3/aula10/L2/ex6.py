@@ -1,4 +1,4 @@
-def num_diferente(A: [int]) -> int:
+def num_diferentes(A: [int]) -> int:
     distintos = 0
     for a in range(len(A)):
         tem_igual = False
@@ -7,4 +7,8 @@ def num_diferente(A: [int]) -> int:
         if not tem_igual: distintos += 1
     return distintos
 
-print(num_diferente([1,23, 1, 1,54,6,7,3,2,4,45,2]))
+def num_distintos(A: [int]) -> int:
+    D = []
+    for a in A:
+        if a not in D: D.append(a)
+    return len(D)

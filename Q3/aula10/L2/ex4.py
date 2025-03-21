@@ -1,7 +1,16 @@
-def max_zeros(A: [int]) -> (int, int, int):
-    i = 0
-    ant = A[i]
-    for a in range(1, len(A)):
-        if ant != 0 and A[a] == 0: return
+def seq_zeros(A: [int]) -> (int, int, int):
+    init_seq = 0
+    maior_seq0 = (0, 0, 0)
+    valor_ant = -1
+    for i in range(len(A)):
+        if valor_ant != 0 and A[i] == 0:
+            init_seq = i
+        elif A[i] != 0:
+            seq = i - init_seq
+            if seq > maior_seq0[0]: maior_seq0 = (seq, init_seq, i)
+        elif i == len(A) - 1:
+            seq = i - init_seq + 1
+            if seq > maior_seq0[0]: maior_seq0 = (seq, init_seq, i + 1)
+        valor_ant = A[i]
 
-max_zeros([1,23,43,0,0,0,1,2,0,0,12,23,423,0,0,0,0,432,523,23,0,0,0,423,0])
+    return maior_seq0
