@@ -23,5 +23,3 @@ def num_distintos_ord(A: [int]) -> int:
         if a > ant: contador += 1
         ant = a
     return contador
-
-print(num_distintos_ord([3,1,55,2,23,43,2321,1,33,2,3,2,2,5]))
