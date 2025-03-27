@@ -1,6 +1,6 @@
-def busc_pares(A: [int], x: int) -> int:
-    A.sort()
-    tam = len(A)
+def busc_pares (A: [int], x: int) -> int:
+    A.sort ()
+    tam = len (A)
     i, j = 0, tam - 1
     while i < j:
         soma = A[i] + A[j]

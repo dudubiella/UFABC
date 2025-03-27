@@ -1,4 +1,4 @@
-def dia_semana(d: int, m: int, a: int) -> str:
+def dia_semana (d: int, m: int, a: int) -> str:
     a0 = a - (14 - m)// 12
     x = a0 + a0 // 4 - a0 // 100 + a0 // 400
     m0 = m + 12 * ((14 - m) // 12) - 2

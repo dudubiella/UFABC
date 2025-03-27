@@ -1,5 +1,5 @@
-def sub_list(A: [int], L: [int]):
-    tam = len(A)
+def sub_list (A: [int], L: [int]):
+    tam = len (A)
     if tam == 0: return True
     i = 0
     for l in L:
