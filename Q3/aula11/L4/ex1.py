@@ -14,7 +14,9 @@ def RandomInsert (A):
         A[i+1] = x
     return A
 
-print(RandomInsert([1,2,3,4,5,6,7,8,9]))
+#A solução apresentada apresenta falhas na sua lógica de programação, pois apesar de utilizar a biblioteca random a lista devolvida não é embaralhada completamente, com os elementos não tendo a mesma probabilidade de estarem em qualquer posição da lista, por exemplo o primeiro elemento que nunca é trocado de sua posição inicial.
+
+#Código correto para realizar o embaralhamento aleatório dos elementos de uma lista A.
 
 def lista_random (A: [int]) -> [int]:
     n = len(a)
