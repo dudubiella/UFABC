@@ -1,8 +1,8 @@
 def decision_sort(lista: list) -> list:
-    for a in range(len(lista) - 1):
-        for b in range(a + 1, len(lista)):
-            if lista[b] < lista[a]: lista[b], lista[a] = lista[a], lista[b]
+    for j in range(1, len(lista)):
+        item, i = lista[j], j - 1
+        while i >= 0 and item < lista[i]:
+            lista[i + 1] = lista[i]
+            i -= 1
+        lista[i + 1] = item
     return lista
-            
-print(decision_sort([5, 7, 10, -2, -13, 100, 101, 104]))
-for a in range(10): print(a)
