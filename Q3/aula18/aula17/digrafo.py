@@ -13,7 +13,10 @@ class Digrafo:
             if chega.mat[a][b] == 1:
                 return True
         return False
-
+    
+    def peso_a_to_b (self, a: int, b: int):
+        # w * w (soma = multiplicação, multiplicação = min)
+        return
 
     def USSSP (self, s: int):
         d = [oo] * (n := self.M.lin); d[s] = 0
