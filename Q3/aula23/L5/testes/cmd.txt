@@ -1,0 +1,6 @@
+python Q3\aula23\L5\magic.py < Q3\aula23\L5\testes\magic.in > Q3\aula23\L5\testes\magic.out
+python Q3\aula23\L5\matrix.py < Q3\aula23\L5\testes\matrix.in > Q3\aula23\L5\testes\matrix.out
+python Q3\aula23\L5\seqs.py < Q3\aula23\L5\testes\seqs.in > Q3\aula23\L5\testes\seqs.out
+python Q3\aula23\L5\t3.py < Q3\aula23\L5\testes\t3.in > Q3\aula23\L5\testes\t3.out
+python Q3\aula23\L5\valleys.py < Q3\aula23\L5\testes\valleys.in > Q3\aula23\L5\testes\valleys.out
+python Q3\aula23\L5\vikings.py < Q3\aula23\L5\testes\vikings.in > Q3\aula23\L5\testes\vikings.out

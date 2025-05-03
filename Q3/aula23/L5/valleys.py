@@ -12,12 +12,24 @@ def encontrar_vales (grid: [[int]], m: int, n: int) -> [(int, int)]:
                         potencial_vale[i][j] = False
                     elif grid[i][j] < grid[i][j+1]:
                         potencial_vale[i][j+1] = False
+                # verifica diagonal inferior direita
+                if i + 1 < m and j + 1 < n:
+                    if grid[i][j] > grid[i+1][j+1]:
+                        potencial_vale[i][j] = False
+                    elif grid[i][j] < grid[i+1][j+1]:
+                        potencial_vale[i+1][j+1] = False
                 # verifica abaixo
                 if i + 1 < m:
                     if grid[i][j] > grid[i+1][j]:
                         potencial_vale[i][j] = False
                     elif grid[i][j] < grid[i+1][j]:
                         potencial_vale[i+1][j] = False
+                # verifica diagonal inferior esquerda
+                if i + 1 < m and j - 1 >= 0:
+                    if grid[i][j] > grid[i+1][j-1]:
+                        potencial_vale[i][j] = False
+                    elif grid[i][j] < grid[i+1][j-1]:
+                        potencial_vale[i+1][j-1] = False
     vales = []
     for i in range (m):
         for j in range (n):
@@ -25,20 +37,19 @@ def encontrar_vales (grid: [[int]], m: int, n: int) -> [(int, int)]:
                 vales.append ((i+1, j+1))
     return vales
 
-def main ():
+def main():
     instancia = 1
-    while True:
-        m, n = ler_inteiros ()
-        if m == 0 and n == 0:
-            break
-        grid = [ler_inteiros () for _ in range (m)]
-        vales = encontrar_vales (grid, m, n)
-        print (f"Instancia {instancia}")
+    entrada = ler_inteiros()
+    while entrada and not (entrada[0] == 0 and entrada[1] == 0):
+        m, n = entrada
+        grid = [ler_inteiros() for _ in range(m)]
+        vales = encontrar_vales(grid, m, n)
+        if instancia > 1: print()
+        print(f"Instancia {instancia}")
         for x, y in vales:
-            print (x, y)
-        print ()
+            print(x, y)
         instancia += 1
-    return
+        entrada = ler_inteiros()
 
 if __name__ == "__main__":
     main ()
