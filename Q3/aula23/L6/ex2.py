@@ -41,4 +41,4 @@ def z(x: [float], y: [float]) -> [float]:
             z[j] += x[i] * T[i][j]
     return z
 
-#f) O produto z = x ^ T * T(y) equivale à convolução discreta entre x e y, pois cada coordenada z[k] = ∑(i = 0 à n - 1) x[i] * y[k - i], tal que y[k - i] = 0 se k - i está fpra do intervalo [0, n-1]
+#f) O produto z = x ^ T * T(y) equivale à convolução discreta entre x e y, pois cada coordenada z[k] = ∑(i = 0 à n - 1) x[i] * y[k - i], tal que y[k - i] = 0 se k - i está fora do intervalo [0, n-1]

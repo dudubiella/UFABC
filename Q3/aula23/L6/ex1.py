@@ -36,8 +36,6 @@ def verifica_r_espiral(A: [[int]]) -> int:
                 case 3: inicio[1] += 1
             cont = (cont + 1) % 4
             di, dj = direcoes[cont]
-
-            
         i, j = i + di, j + dj
     return r if r is not None else 0
 
