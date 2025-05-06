@@ -1,5 +1,5 @@
 from math import inf as oo
-from aula16.matriz import Matriz, imprime_mat
+from aula18.matriz import Matriz, imprime_mat
 
 class Digrafo:
     def __init__ (self, m, w):

@@ -1,4 +1,4 @@
-from aula17.aula16.matriz import Matriz, imprime_mat
+from aula19.aula18.matriz import Matriz, imprime_mat
 class Eq:
     def __init__ (self, A: [[float]], b: [float]):
         self.A = Matriz(A)
