@@ -1,0 +1,16 @@
+{
+  "('SHOP C NORT', 'SHOP C NORTE')": "s",
+  "('TERM PQ D PEDR', 'TERM PQ D PEDRO')": "s",
+  "('CITY JARAGUA', 'JARAGUA')": "x",
+  "('PCA REPUBL', 'PCA REPUBLICA')": "s",
+  "('METRO TUCUR', 'METRO TUCURUVI')": "s",
+  "('CAMPO LIMPO', 'JD CAMPO LIMPO')": "s",
+  "('TERM P D PEDRO', 'TERM P D PEDRO II')": "s",
+  "('CACHOEIRINHA', 'TERM CACHOEIRINHA')": "s",
+  "('CACHOEIRINHA', 'VL NV CACHOEIRINHA')": "x",
+  "('LAPA', 'TERM LAPA')": "s",
+  "('PCA DA SE', 'PCA DA SE CIRC')": "x",
+  "('COHAB TAIPAS', 'TAIPAS')": "x",
+  "('LAPA', 'TERMINAL LAPA')": "s",
+  "('JD PERY', 'JD PERY ALTO')": "x"
+}
