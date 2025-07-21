@@ -1,0 +1,528 @@
+{
+  "METRO ITA": {
+    "pseudonimos": [
+      "METRO ITAQU",
+      "METRO ITAQUE",
+      "METRO ITAQUER",
+      "METRO ITAQUERA",
+      "METRO ITAQUERA CIRC"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "TERM P D PED": {
+    "pseudonimos": [
+      "TERM P D PEDRO",
+      "TERM P D PEDRO II"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "TERM BANDEIR": {
+    "pseudonimos": [
+      "TERM BANDEIRA"
+    ],
+    "regiao": "Centro"
+  },
+  "PCA DA S": {
+    "pseudonimos": [
+      "PCA DA SE",
+      "PCA DA SE CIRC"
+    ],
+    "regiao": "Centro"
+  },
+  "TERM VILA PR": {
+    "pseudonimos": [
+      "TERM VILA PRUDENTE",
+      "VILA PRUDENTE"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "PQ D PEDRO": {
+    "pseudonimos": [
+      "PQ D PEDRO II",
+      "T PQ D PEDRO",
+      "T PQ D PEDRO II",
+      "TER PQ D PEDRO",
+      "TERM PQ D PEDRO",
+      "TERM PQ D PEDRO II"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "CIRCULA": {
+    "pseudonimos": [
+      "CIRCULAR"
+    ],
+    "regiao": "Centro"
+  },
+  "SAO MATEUS": {
+    "pseudonimos": [
+      "T SAO MATEUS",
+      "TER SAO MATEUS",
+      "TERM SAO MATEU",
+      "TERM SAO MATEUS",
+      "TERM.SAO MATEUS"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "PENHA": {
+    "pseudonimos": [
+      "TERM PENHA"
+    ],
+    "regiao": "Zona Leste"
+  },
+  "PCA REPUBL": {
+    "pseudonimos": [
+      "PCA REPUBLICA"
+    ],
+    "regiao": "Centro"
+  },
+  "BARRA FUNDA": {
+    "pseudonimos": [
+      "M BARRA FUN",
+      "M BARRA FUND",
+      "M BARRA FUNDA",
+      "MBARRA FUNDA",
+      "MET BARRA FUNDA",
+      "METRO BARRA FU",
+      "METRO BARRA FUND",
+      "METRO BARRA FUNDA"
+    ],
+    "regiao": null
+  },
+  "LAPA": {
+    "pseudonimos": [
+      "TERM LAPA",
+      "TERMINAL LAPA"
+    ],
+    "regiao": null
+  },
+  "PIRITUBA": {
+    "pseudonimos": [
+      "TERM PIRITUBA",
+      "TERM.PIRITUBA",
+      "TERMINAL PIRITUBA",
+      "TERMPIRITUBA"
+    ],
+    "regiao": null
+  },
+  "CACHOEIRINHA": {
+    "pseudonimos": [
+      "T.CACHOEIRINHA",
+      "TERM  CACHOEIRINHA",
+      "TERM CACHOEIRINHA"
+    ],
+    "regiao": null
+  },
+  "CID DABRIL": {
+    "pseudonimos": [
+      "CID DABRIL III"
+    ],
+    "regiao": null
+  },
+  "METRO VILA MADALEN": {
+    "pseudonimos": [
+      "METRO VILA MADALENA"
+    ],
+    "regiao": null
+  },
+  "CORREIO": {
+    "pseudonimos": [
+      "PC DO CORREIO",
+      "PCA DO CORREIO",
+      "PÇA DO CORREIO",
+      "TERM CORREIO"
+    ],
+    "regiao": null
+  },
+  "TERM PQ D PEDR": {
+    "pseudonimos": [
+      "TERM PQ D PEDRO",
+      "TERM PQ D PEDRO II"
+    ],
+    "regiao": null
+  },
+  "METRO TUCUR": {
+    "pseudonimos": [
+      "METRO TUCURUV",
+      "METRO TUCURUVI"
+    ],
+    "regiao": null
+  },
+  "CASA VERDE": {
+    "pseudonimos": [
+      "TERM CASA VERDE"
+    ],
+    "regiao": null
+  },
+  "METRO SANTAN": {
+    "pseudonimos": [
+      "METRO SANTANA"
+    ],
+    "regiao": null
+  },
+  "SANTANA": {
+    "pseudonimos": [
+      "TERM SANTANA"
+    ],
+    "regiao": null
+  },
+  "CAMPO LIMPO": {
+    "pseudonimos": [
+      "T CAMPO LIMPO",
+      "TERM CAMPO LIMPO"
+    ],
+    "regiao": null
+  },
+  "TERM PARADA INGLES": {
+    "pseudonimos": [
+      "TERM PARADA INGLESA"
+    ],
+    "regiao": null
+  },
+  "METRO CARANDIR": {
+    "pseudonimos": [
+      "METRO CARANDIRU"
+    ],
+    "regiao": null
+  },
+  "SHOP C NORT": {
+    "pseudonimos": [
+      "SHOP C NORTE"
+    ],
+    "regiao": null
+  },
+  "M BARRA FUN": {
+    "pseudonimos": [
+      "M BARRA FUNDA"
+    ],
+    "regiao": null
+  },
+  "CENTER NORT": {
+    "pseudonimos": [
+      "CENTER NORTE",
+      "SHOP CENTER NORTE"
+    ],
+    "regiao": null
+  },
+  "PINHEIROS": {
+    "pseudonimos": [
+      "T PINHEIROS",
+      "TERM PINHEI",
+      "TERM PINHEIR",
+      "TERM PINHEIRO",
+      "TERM PINHEIROS",
+      "TERMINAL PINHEIROS"
+    ],
+    "regiao": null
+  },
+  "CPTM GUAIANAZE": {
+    "pseudonimos": [
+      "CPTM GUAIANAZES"
+    ],
+    "regiao": null
+  },
+  "SAO MIGUEL": {
+    "pseudonimos": [
+      "T SAO MIGUEL",
+      "TERM SAO MIGUEL",
+      "TERM.SAO MIGUEL"
+    ],
+    "regiao": null
+  },
+  "JD CAMARGO VELH": {
+    "pseudonimos": [
+      "JD CAMARGO VELHO"
+    ],
+    "regiao": null
+  },
+  "TERM A E CARVA": {
+    "pseudonimos": [
+      "TERM A E CARVAL",
+      "TERM A E CARVALH",
+      "TERM A E CARVALHO"
+    ],
+    "regiao": null
+  },
+  "CID KEMEL": {
+    "pseudonimos": [
+      "CID KEMEL II"
+    ],
+    "regiao": null
+  },
+  "COHAB": {
+    "pseudonimos": [
+      "COHAB I",
+      "COHAB II"
+    ],
+    "regiao": null
+  },
+  "EST ITAIM PAULISTA": {
+    "pseudonimos": [
+      "ITAIM PAULISTA"
+    ],
+    "regiao": null
+  },
+  "MT ARTUR AL": {
+    "pseudonimos": [
+      "MT ARTUR ALVIN"
+    ],
+    "regiao": null
+  },
+  "EST GUAIANAZ": {
+    "pseudonimos": [
+      "EST GUAIANAZES",
+      "GUAIANAZES"
+    ],
+    "regiao": null
+  },
+  "CID TIRADENTES": {
+    "pseudonimos": [
+      "T CID TIRADEN",
+      "T CID TIRADENTE",
+      "T CID TIRADENTES",
+      "TE CID TIRADENTES",
+      "TERM CID TIRADE",
+      "TERM CID TIRADENTES"
+    ],
+    "regiao": null
+  },
+  "METALURGIC": {
+    "pseudonimos": [
+      "METALURGICOS"
+    ],
+    "regiao": null
+  },
+  "CIDADE TIRADENTES": {
+    "pseudonimos": [
+      "TERM CIDADE TIRAD",
+      "TERM CIDADE TIRADEN",
+      "TERM CIDADE TIRADENTES"
+    ],
+    "regiao": null
+  },
+  "JD LIMOEIRO": {
+    "pseudonimos": [
+      "LIMOEIRO"
+    ],
+    "regiao": null
+  },
+  "COHAB FAZE DO CAR": {
+    "pseudonimos": [
+      "COHAB FAZE DO CARMO"
+    ],
+    "regiao": null
+  },
+  "E.T.ITAQUERA": {
+    "pseudonimos": [
+      "ITAQUERA",
+      "TERM ITAQUERA"
+    ],
+    "regiao": null
+  },
+  "METR ITAQUE": {
+    "pseudonimos": [
+      "METR ITAQUERA"
+    ],
+    "regiao": null
+  },
+  "METRO TATUAP": {
+    "pseudonimos": [
+      "METRO TATUAPE"
+    ],
+    "regiao": null
+  },
+  "TERM CIDADE TIRAD": {
+    "pseudonimos": [
+      "TERM CIDADE TIRADEN"
+    ],
+    "regiao": null
+  },
+  "TERM SACO": {
+    "pseudonimos": [
+      "TERM SACOMA"
+    ],
+    "regiao": null
+  },
+  "T P D PEDRO": {
+    "pseudonimos": [
+      "T P D PEDRO II"
+    ],
+    "regiao": null
+  },
+  "METRO CONC": {
+    "pseudonimos": [
+      "METRO CONCEICAO",
+      "METRO CONCEIÇAO"
+    ],
+    "regiao": null
+  },
+  "SANTO AMAR": {
+    "pseudonimos": [
+      "SANTO AMARO",
+      "TERM SANTO AM",
+      "TERM SANTO AMARAO",
+      "TERM SANTO AMARO"
+    ],
+    "regiao": null
+  },
+  "IBIRAPUERA": {
+    "pseudonimos": [
+      "PQ.DO IBIRAPUERA"
+    ],
+    "regiao": null
+  },
+  "AUTODROMO": {
+    "pseudonimos": [
+      "ESTACAO AUTODROMO"
+    ],
+    "regiao": null
+  },
+  "STO AMARO": {
+    "pseudonimos": [
+      "TERM STO AMARO",
+      "TERM.STO AMARO"
+    ],
+    "regiao": null
+  },
+  "BALNEARIO MAR PAULISTA": {
+    "pseudonimos": [
+      "MAR PAULISTA"
+    ],
+    "regiao": null
+  },
+  "GUARAPIRANGA": {
+    "pseudonimos": [
+      "T GUARAPIRANGA",
+      "T.GUARAPIRANGA",
+      "TERM GUARAPIRANGA"
+    ],
+    "regiao": null
+  },
+  "TERM CAPELINH": {
+    "pseudonimos": [
+      "TERM CAPELINHA"
+    ],
+    "regiao": null
+  },
+  "METRO BUTANTA": {
+    "pseudonimos": [
+      "T METRO BUTANTA"
+    ],
+    "regiao": null
+  },
+  "CID UNIV": {
+    "pseudonimos": [
+      "CID UNIVERSIT",
+      "CID UNIVERSITARIA"
+    ],
+    "regiao": null
+  },
+  "PCA RAMOS": {
+    "pseudonimos": [
+      "PCA RAMOS AZ",
+      "PCA RAMOS AZEVE",
+      "PCA RAMOS AZEVEDO",
+      "PCA RAMOS DE AZE",
+      "PCA RAMOS DE AZEVED",
+      "PCA RAMOS DE AZEVEDO"
+    ],
+    "regiao": null
+  },
+  "PCA RAMOS DE AZE": {
+    "pseudonimos": [
+      "PCA RAMOS DE AZEVED",
+      "PCA RAMOS DE AZEVEDO"
+    ],
+    "regiao": null
+  },
+  "M. ANA RO": {
+    "pseudonimos": [
+      "M. ANA ROSA"
+    ],
+    "regiao": null
+  },
+  "TERM VILA SONIA": {
+    "pseudonimos": [
+      "VILA SONIA"
+    ],
+    "regiao": null
+  },
+  "CDHU RAPOSO TAVARES": {
+    "pseudonimos": [
+      "RAPOSO TAVARES"
+    ],
+    "regiao": null
+  },
+  "JD PAULISTA": {
+    "pseudonimos": [
+      "JD PAULISTANO"
+    ],
+    "regiao": null
+  },
+  "COHAB BRASILANDI": {
+    "pseudonimos": [
+      "COHAB BRASILANDIA"
+    ],
+    "regiao": null
+  },
+  "CONEXAO VILA": {
+    "pseudonimos": [
+      "CONEXAO VILA LORI",
+      "CONEXAO VILA LORIO"
+    ],
+    "regiao": null
+  },
+  "TERM V N CAC": {
+    "pseudonimos": [
+      "TERM V N CACH",
+      "TERM V N CACHOE",
+      "TERM V N CACHOEI",
+      "TERM V N CACHOEIR"
+    ],
+    "regiao": null
+  },
+  "CONEXAO VILA IORIO": {
+    "pseudonimos": [
+      "VILA IORIO"
+    ],
+    "regiao": null
+  },
+  "CONEX PETRON PORT": {
+    "pseudonimos": [
+      "CONEX PETRON PORTELA"
+    ],
+    "regiao": null
+  },
+  "TERM PRIN": {
+    "pseudonimos": [
+      "TERM PRINC ISABEL"
+    ],
+    "regiao": null
+  },
+  "JD SAO PAULO": {
+    "pseudonimos": [
+      "METRO JD SAO PAULO"
+    ],
+    "regiao": null
+  },
+  "CIDADE KEMEL": {
+    "pseudonimos": [
+      "CIDADE KEMEL I",
+      "CIDADE KEMEL II"
+    ],
+    "regiao": null
+  },
+  "SHOP ARICA": {
+    "pseudonimos": [
+      "SHOP ARICANDU",
+      "SHOP ARICANDUV",
+      "SHOP ARICANDUVA"
+    ],
+    "regiao": null
+  },
+  "CID NOVA AMERICA": {
+    "pseudonimos": [
+      "NOVA AMERICA"
+    ],
+    "regiao": null
+  }
+}

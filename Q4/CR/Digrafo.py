@@ -5,11 +5,13 @@ import matplotlib.pyplot as plt
 import json
 from pathlib import Path
 
-# Caminhos fixos do projeto
-CAMINHO_DADOS = "Q4\\CR\\Dados"
-ARQUIVO_HISTORICO = Path(CAMINHO_DADOS) / "nomes_similares.json"
+# -------- Configurações e caminhos --------
 
-# -------- Carregamento e Construção do Grafo --------
+CAMINHO_DADOS = "Q4\\CR\\Dados"
+ARQUIVO_TERMINAIS_UNIFICADOS = Path(CAMINHO_DADOS) / "terminais_unificados.json"
+ARQUIVO_REGIOES = Path(CAMINHO_DADOS) / "regioes_estacoes.json"
+
+# -------- Carregamento de dados --------
 
 def carregar_dados():
     arquivos_xls = glob.glob(f"{CAMINHO_DADOS}/*.xls")
@@ -19,6 +21,22 @@ def carregar_dados():
         df = pd.read_excel(arquivo, skiprows=2)
         dfs.append(df)
     return pd.concat(dfs, ignore_index=True)
+
+def carregar_terminais_unificados():
+    if ARQUIVO_TERMINAIS_UNIFICADOS.exists():
+        with open(ARQUIVO_TERMINAIS_UNIFICADOS, "r", encoding="utf-8") as f:
+            return json.load(f)
+    else:
+        print(f"Aviso: arquivo {ARQUIVO_TERMINAIS_UNIFICADOS} não encontrado.")
+        return {}
+
+def carregar_regioes():
+    if ARQUIVO_REGIOES.exists():
+        with open(ARQUIVO_REGIOES, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"NORTE": [], "SUL": [], "LESTE": [], "OESTE": [], "CENTRO": []}
+
+# -------- Construção do grafo --------
 
 def extrair_origem_destino(linha_str):
     if not isinstance(linha_str, str):
@@ -50,7 +68,21 @@ def construir_grafo(df, peso_coluna='Tot Passageiros Transportados'):
 
     return G
 
-# -------- Filtro --------
+def construir_grafo_filtrado(G_original, mapeamento_duplicados):
+    G_novo = nx.DiGraph()
+
+    for u, v, data in G_original.edges(data=True):
+        u_mapeado = mapeamento_duplicados.get(u, u)
+        v_mapeado = mapeamento_duplicados.get(v, v)
+
+        if G_novo.has_edge(u_mapeado, v_mapeado):
+            G_novo[u_mapeado][v_mapeado]['weight'] += data.get('weight', 0)
+        else:
+            G_novo.add_edge(u_mapeado, v_mapeado, weight=data.get('weight', 0))
+
+    return G_novo
+
+# -------- Filtros --------
 
 def filtrar_grafo_por_grau(G, grau_minimo):
     graus_entrada = dict(G.in_degree())
@@ -134,10 +166,31 @@ def calcular_metricas(G):
 
 def desenhar_grafo(G, grau_minimo=None):
     plt.figure(figsize=(14,10))
-    pos = nx.spring_layout(G)
+    pos = nx.spring_layout(G, seed=42)  # Para consistência na disposição dos nós
+
+    # Dicionário de cores para regiões (adicione conforme suas regiões reais)
+    cores_regiao = {
+        "Zona Leste": "orange",
+        "Centro": "green",
+        "Zona Oeste": "purple",
+        "Zona Norte": "blue",
+        "Zona Sul": "red"
+    }
+
+    # Para cada nó, pegar a cor da sua região
+    node_colors = []
+    for n in G.nodes:
+        regiao = G.nodes[n].get("regiao", None)
+        if regiao is None:
+            cor = "lightgray"  # cor padrão para nós sem região
+        else:
+            cor = cores_regiao.get(regiao, "lightgray")  # se a região não está no dicionário, padrão
+        node_colors.append(cor)
+
+    # Labels com números (você pode mudar se quiser nomes)
     labels = {n: str(i+1) for i, n in enumerate(G.nodes)}
 
-    nx.draw_networkx_nodes(G, pos, node_size=500, node_color='skyblue')
+    nx.draw_networkx_nodes(G, pos, node_size=500, node_color=node_colors)
     nx.draw_networkx_edges(G, pos, arrowstyle='-|>', arrowsize=12, edge_color='gray')
     nx.draw_networkx_labels(G, pos, labels=labels, font_size=8)
 
@@ -150,48 +203,6 @@ def desenhar_grafo(G, grau_minimo=None):
     plt.title(titulo)
     plt.axis('off')
     plt.show()
-
-# -------- Histórico e verificação interativa --------
-
-def carregar_historico():
-    if ARQUIVO_HISTORICO.exists():
-        with open(ARQUIVO_HISTORICO, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {}
-
-def salvar_historico(historico):
-    with open(ARQUIVO_HISTORICO, "w", encoding="utf-8") as f:
-        json.dump(historico, f, indent=2, ensure_ascii=False)
-
-def verificar_nomes_similares_interativo(nomes, historico):
-    agrupamentos = {}
-    ignorados = set()
-    for i in range(len(nomes)):
-        for j in range(i+1, len(nomes)):
-            nome1 = nomes[i].strip().upper()
-            nome2 = nomes[j].strip().upper()
-            par = tuple(sorted([nome1, nome2]))
-            if str(par) in historico and historico[str(par)] in ("s","n"):
-                continue
-            if nome1 in nome2 or nome2 in nome1:
-                print(f"\nPossível duplicata:")
-                print(f"1: {nome1}")
-                print(f"2: {nome2}")
-                print("Eles representam o mesmo ponto?")
-                print("[s] Sim    [n] Não    [x] Não sei")
-                resp = input("Sua resposta: ").strip().lower()
-                if resp not in {"s","n","x"}:
-                    print("Resposta inválida recebida. Encerrando a verificação sem salvar alterações.")
-                    return agrupamentos, ignorados, historico
-                if resp == "s":
-                    historico[str(par)] = "s"
-                    agrupamentos.setdefault(nome1, []).append(nome2)
-                elif resp == "n":
-                    historico[str(par)] = "n"
-                    ignorados.add(par)
-                else:
-                    print("Entendido. Esse par será perguntado novamente na próxima execução.")
-    return agrupamentos, ignorados, historico
 
 # -------- Entrada do Grau Mínimo --------
 
@@ -218,21 +229,143 @@ def solicitar_grau_minimo():
         print("Opção inválida. Considerando grafo completo.")
         return None
 
+# -------- Carregamento de terminais unificados com região --------
+
+def carregar_terminais_unificados():
+    if ARQUIVO_TERMINAIS_UNIFICADOS.exists():
+        with open(ARQUIVO_TERMINAIS_UNIFICADOS, "r", encoding="utf-8") as f:
+            return json.load(f)
+    else:
+        print(f"Aviso: arquivo {ARQUIVO_TERMINAIS_UNIFICADOS} não encontrado.")
+        return {}
+
+# -------- Construção do mapeamento duplicados --------
+
+def construir_mapeamento_duplicados(terminais_unificados):
+    mapeamento = {}
+    for principal, info in terminais_unificados.items():
+        mapeamento[principal] = principal
+        for pseudo in info.get("pseudonimos", []):
+            mapeamento[pseudo] = principal
+    return mapeamento
+
+# -------- Obter região da estação (busca direta nos terminais unificados) --------
+
+def obter_regiao_estacao(estacao, terminais_unificados):
+    # Se for terminal principal
+    if estacao in terminais_unificados:
+        return terminais_unificados[estacao].get("regiao", None)
+    # Se for pseudônimo, retorna a região do terminal principal
+    for principal, info in terminais_unificados.items():
+        if estacao in info.get("pseudonimos", []):
+            return info.get("regiao", None)
+    return None
+
+# -------- Classificação interativa atualizada para alterar a região dos terminais unificados --------
+
+def salvar_terminais_unificados(terminais_unificados):
+    with open(ARQUIVO_TERMINAIS_UNIFICADOS, "w", encoding="utf-8") as f:
+        json.dump(terminais_unificados, f, indent=2, ensure_ascii=False)
+
+def classificar_estacoes_interativamente(estacoes, terminais_unificados):
+    for estacao in estacoes:
+        terminal_principal = estacao
+        for principal, info in terminais_unificados.items():
+            if estacao == principal:
+                terminal_principal = principal
+                break
+            # info pode ser lista ou dict
+            pseudos = []
+            if isinstance(info, dict):
+                pseudos = info.get("pseudonimos", [])
+            elif isinstance(info, list):
+                pseudos = info
+            if estacao in pseudos:
+                terminal_principal = principal
+                break
+        
+        # Garante que terminais_unificados[terminal_principal] é dict para evitar erros
+        if terminal_principal not in terminais_unificados or not isinstance(terminais_unificados[terminal_principal], dict):
+            terminais_unificados[terminal_principal] = {"pseudonimos": []}
+
+        # Se região já atribuída, pula
+        if "regiao" in terminais_unificados[terminal_principal]:
+            continue
+
+        print(f"\nA estação '{estacao}' (terminal principal: '{terminal_principal}') pertence a qual região?")
+        print("[1] Norte")
+        print("[2] Sul")
+        print("[3] Leste")
+        print("[4] Oeste")
+        print("[5] Centro")
+        print("[6] Ignorar (atribuir como indefinido)")
+
+        escolha = input("Escolha uma opção [1-6]: ").strip()
+
+        if escolha in {"1", "2", "3", "4", "5"}:
+            chaves = ["NORTE", "SUL", "LESTE", "OESTE", "CENTRO"]
+            regiao_escolhida = chaves[int(escolha) - 1]
+            terminais_unificados[terminal_principal]["regiao"] = regiao_escolhida
+            print(f"Terminal '{terminal_principal}' classificado como {regiao_escolhida}.")
+        elif escolha == "6":
+            terminais_unificados[terminal_principal]["regiao"] = None
+            print(f"Terminal '{terminal_principal}' marcado como indefinido (ignorando).")
+        else:
+            print("Entrada inválida. Terminal não classificado. Será perguntado novamente na próxima execução.")
+
+    salvar_terminais_unificados(terminais_unificados)
+
 # -------- Função principal --------
 
 def main():
     df_total = carregar_dados()
+
+    terminais_unificados = carregar_terminais_unificados()
+    if not terminais_unificados:
+        print("Terminais unificados não carregados, encerrando.")
+        return
+
+    mapeamento_duplicados = construir_mapeamento_duplicados(terminais_unificados)
+    nos_unicos = list(terminais_unificados.keys())
+
     G = construir_grafo(df_total)
+    G_filtrado = construir_grafo_filtrado(G, mapeamento_duplicados)
+
+    # Atribuir a região como atributo de cada nó no grafo filtrado
+    for estacao in G_filtrado.nodes:
+        regiao = obter_regiao_estacao(estacao, terminais_unificados)
+        G_filtrado.nodes[estacao]["regiao"] = regiao
+
+    # Mostrar regiões das estações no grafo filtrado (exemplo)
+    print("\nEstações no grafo filtrado com suas regiões:")
+    for estacao in G_filtrado.nodes:
+        regiao = obter_regiao_estacao(estacao, terminais_unificados)
+        print(f"{estacao} -> Região: {regiao}")
+
+    print("\nEscolha uma das opções:")
+    print("[1] Classificar estações por região (interativo)")
+    print("[2] Ir direto para análise e visualização do grafo")
+
+    opcao = input("Sua escolha [1/2]: ").strip()
+
+    if opcao == "1":
+        regioes = carregar_regioes()
+        classificar_estacoes_interativamente(nos_unicos, regioes)
+        print("\nClassificação concluída. Execute novamente para visualizar o grafo com cores por região.")
+        return
+
+    print("\nConstruindo grafo filtrado com estações únicas consolidadas...")
 
     grau_minimo = solicitar_grau_minimo()
 
     if grau_minimo is None:
-        G_analisado = G
-        print(f"\nAnalisando o grafo completo com {len(G.nodes())} nós.")
+        G_analisado = G_filtrado
+        print(f"\nAnalisando o grafo filtrado completo com {len(G_analisado.nodes())} nós.")
     else:
-        G_analisado = filtrar_grafo_por_grau(G, grau_minimo)
+        G_analisado = filtrar_grafo_por_grau(G_filtrado, grau_minimo)
 
     desenhar_grafo(G_analisado, grau_minimo=grau_minimo)
+
     metricas = calcular_metricas(G_analisado)
 
     print(f"\nDensidade do grafo: {metricas['densidade']:.6f}")
@@ -255,10 +388,6 @@ def main():
     print("\nCentralidade PageRank (exemplo das 5 maiores estações):")
     for no, val in sorted(metricas["pagerank"].items(), key=lambda x: x[1], reverse=True)[:5]:
         print(f" - {no}: {val:.4f}")
-
-    historico = carregar_historico()
-    agrupamentos, ignorados, historico = verificar_nomes_similares_interativo(list(G_analisado.nodes), historico)
-    salvar_historico(historico)
 
     print("\nFinalizado.\n")
 
