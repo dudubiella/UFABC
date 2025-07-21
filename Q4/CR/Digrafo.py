@@ -207,11 +207,11 @@ def solicitar_grau_minimo():
     elif escolha == "2":
         while True:
             try:
-                grau_minimo = int(input("Digite o grau mínimo desejado (número inteiro >= 1): ").strip())
-                if grau_minimo >= 1:
+                grau_minimo = int(input("Digite o grau mínimo desejado (número inteiro >= 2): ").strip())
+                if grau_minimo >= 2:
                     return grau_minimo
                 else:
-                    print("Por favor, insira um número inteiro maior ou igual a 1.")
+                    print("Por favor, insira um número inteiro maior ou igual a 2.")
             except ValueError:
                 print("Entrada inválida. Digite um número inteiro.")
     else:
