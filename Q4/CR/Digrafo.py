@@ -4,6 +4,9 @@ import glob
 import matplotlib.pyplot as plt
 import json
 from pathlib import Path
+from community import community_louvain
+import numpy as np
+import matplotlib.colors as mcolors
 
 # -------- Configurações e caminhos --------
 
@@ -29,12 +32,6 @@ def carregar_terminais_unificados():
     else:
         print(f"Aviso: arquivo {ARQUIVO_TERMINAIS_UNIFICADOS} não encontrado.")
         return {}
-
-def carregar_regioes():
-    if ARQUIVO_REGIOES.exists():
-        with open(ARQUIVO_REGIOES, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {"NORTE": [], "SUL": [], "LESTE": [], "OESTE": [], "CENTRO": []}
 
 # -------- Construção do grafo --------
 
@@ -153,14 +150,140 @@ def calcular_metricas(G):
     densidade = calcular_densidade(G)
     diametro, caminho_diametro = calcular_diametro_direcionado(G)
 
+    print("\nCalculando outras centralidades...")
+
+    centralidade_grau = nx.degree_centrality(G)
+    centralidade_intermediacao = nx.betweenness_centrality(G)
+    centralidade_proximidade = nx.closeness_centrality(G)
+    try:
+        if nx.is_connected(G.to_undirected()):
+            centralidade_autovetor = nx.eigenvector_centrality(G.to_undirected(), max_iter=1000)
+        else:
+            centralidade_autovetor = {}
+            print("Grafo desconectado: autovetor não calculado.")
+    except Exception as e:
+        centralidade_autovetor = {}
+        print(f"Erro ao calcular centralidade de autovetor: {e}")
+
     return {
         "grau_entrada_ponderado": grau_entrada_ponderado,
         "grau_saida_ponderado": grau_saida_ponderado,
         "pagerank": pagerank,
         "densidade": densidade,
         "diametro": diametro,
-        "caminho_diametro": caminho_diametro
+        "caminho_diametro": caminho_diametro,
+        "grau": centralidade_grau,
+        "intermediacao": centralidade_intermediacao,
+        "proximidade": centralidade_proximidade,
+        "autovetor": centralidade_autovetor
     }
+
+def analisar_mundo_pequeno(G):
+    G_und = G.to_undirected()
+    if not nx.is_connected(G_und):
+        maior_cc = max(nx.connected_components(G_und), key=len)
+        G_und = G_und.subgraph(maior_cc)
+        print(f"\nGrafo desconectado. Usando maior componente com {len(G_und)} nós.")
+
+    clustering = nx.average_clustering(G_und)
+    path_length = nx.average_shortest_path_length(G_und)
+
+    print("\n--- Mundo Pequeno ---")
+    print(f"Coeficiente de Clusterização Médio: {clustering:.4f}")
+    print(f"Caminho Médio entre Nós: {path_length:.4f}")
+
+def plotar_distribuicao_grau(G):
+    graus = [G.degree(n) for n in G.nodes()]
+    plt.figure(figsize=(8,5))
+    plt.hist(graus, bins=30, color="cornflowerblue")
+    plt.title("Distribuição de Grau")
+    plt.xlabel("Grau")
+    plt.ylabel("Frequência")
+    plt.grid(True)
+    plt.show()
+
+    plt.figure(figsize=(8,5))
+    grau_series = pd.Series(graus).value_counts().sort_index()
+    plt.loglog(grau_series.index, grau_series.values, 'o', color='darkred')
+    plt.title("Distribuição de Grau (Escala Log-Log)")
+    plt.xlabel("Grau (k)")
+    plt.ylabel("P(k)")
+    plt.grid(True)
+    plt.show()
+
+def calcular_assortatividade(G):
+    G_und = G.to_undirected()
+    r = nx.degree_assortativity_coefficient(G_und)
+    print(f"\n--- Assortatividade ---")
+    print(f"Coeficiente de Assortatividade: {r:.4f}")
+    if r < 0:
+        print("A rede é dissortativa (hubs se conectam a pontos periféricos).")
+    elif r > 0:
+        print("A rede é assortativa (hubs se conectam com hubs).")
+    else:
+        print("A rede não apresenta tendência de assortatividade.")
+
+def detectar_comunidades(G):
+    G_und = G.to_undirected()
+    particao = community_louvain.best_partition(G_und)
+    num_comunidades = max(particao.values()) + 1
+
+    print(f"\n--- Comunidades (Louvain) ---")
+    print(f"Número de comunidades encontradas: {num_comunidades}")
+
+    pos = nx.spring_layout(G_und, seed=42)
+
+    cmap = plt.colormaps.get_cmap("tab20")
+    cores = [cmap(particao[n] % cmap.N) for n in G_und.nodes()]
+
+    plt.figure(figsize=(12,8))
+    nx.draw_networkx_nodes(G_und, pos, node_color=cores, node_size=100)
+    nx.draw_networkx_edges(G_und, pos, alpha=0.4)
+    plt.title("Comunidades Detectadas (Louvain)")
+    plt.axis("off")
+    plt.show()
+
+def analisar_robustez(G, proporcao=0.1):
+    G_und = G.to_undirected()
+    n_remover = int(len(G_und.nodes()) * proporcao)
+
+    # Falha aleatória
+    aleatorios = list(G_und.nodes())
+    np.random.shuffle(aleatorios)
+
+    comp_random = []
+    G_temp = G_und.copy()
+    for i in range(n_remover):
+        G_temp.remove_node(aleatorios[i])
+        if G_temp.number_of_nodes() > 0:
+            maior = max(nx.connected_components(G_temp), key=len)
+            comp_random.append(len(maior))
+        else:
+            comp_random.append(0)
+
+    # Ataque dirigido
+    por_grau = sorted(G_und.degree, key=lambda x: x[1], reverse=True)
+    hubs = [n for n, _ in por_grau]
+    comp_dirigido = []
+    G_temp = G_und.copy()
+    for i in range(n_remover):
+        G_temp.remove_node(hubs[i])
+        if G_temp.number_of_nodes() > 0:
+            maior = max(nx.connected_components(G_temp), key=len)
+            comp_dirigido.append(len(maior))
+        else:
+            comp_dirigido.append(0)
+
+    # Plot
+    plt.figure(figsize=(8,5))
+    plt.plot(range(n_remover), comp_random, label="Falha Aleatória")
+    plt.plot(range(n_remover), comp_dirigido, label="Ataque Direcionado (Hubs)")
+    plt.xlabel("Nós Removidos")
+    plt.ylabel("Tamanho do Maior Componente")
+    plt.title("Robustez da Rede")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
 
 # -------- Visualização --------
 
@@ -187,7 +310,6 @@ def desenhar_grafo(G, grau_minimo=None):
             cor = cores_regiao.get(regiao, "lightgray")  # se a região não está no dicionário, padrão
         node_colors.append(cor)
 
-    # Labels com números (você pode mudar se quiser nomes)
     labels = {n: str(i+1) for i, n in enumerate(G.nodes)}
 
     nx.draw_networkx_nodes(G, pos, node_size=500, node_color=node_colors)
@@ -204,31 +326,6 @@ def desenhar_grafo(G, grau_minimo=None):
     plt.axis('off')
     plt.show()
 
-# -------- Entrada do Grau Mínimo --------
-
-def solicitar_grau_minimo():
-    print("\nDeseja visualizar o grafo completo ou aplicar um filtro por grau mínimo?")
-    print("[1] Visualizar grafo completo")
-    print("[2] Definir grau mínimo para filtrar nós")
-
-    escolha = input("Escolha uma opção [1/2]: ").strip()
-
-    if escolha == "1":
-        return None  # Nenhum filtro aplicado
-    elif escolha == "2":
-        while True:
-            try:
-                grau_minimo = int(input("Digite o grau mínimo desejado (número inteiro >= 2): ").strip())
-                if grau_minimo >= 2:
-                    return grau_minimo
-                else:
-                    print("Por favor, insira um número inteiro maior ou igual a 2.")
-            except ValueError:
-                print("Entrada inválida. Digite um número inteiro.")
-    else:
-        print("Opção inválida. Considerando grafo completo.")
-        return None
-
 # -------- Carregamento de terminais unificados com região --------
 
 def carregar_terminais_unificados():
@@ -240,6 +337,37 @@ def carregar_terminais_unificados():
         return {}
 
 # -------- Construção do mapeamento duplicados --------
+
+def atualizar_terminais_unificados(G, terminais_unificados):
+    # Conjunto de todos os nomes já registrados (principais e pseudônimos)
+    todos_os_nomes = set()
+    for principal, info in terminais_unificados.items():
+        todos_os_nomes.add(principal)
+        if isinstance(info, dict):
+            todos_os_nomes.update(info.get("pseudonimos", []))
+
+    novas_estacoes = []
+
+    for estacao in G.nodes:
+        if estacao in todos_os_nomes:
+            continue  # já está presente, como principal ou pseudônimo
+
+        # Não adicionar como terminal principal se já é pseudônimo de alguém
+        ja_e_pseudonimo = False
+        for info in terminais_unificados.values():
+            if isinstance(info, dict) and estacao in info.get("pseudonimos", []):
+                ja_e_pseudonimo = True
+                break
+        if ja_e_pseudonimo:
+            continue  # já está como pseudônimo, não adicionar novamente
+
+        # Adiciona novo terminal com região indefinida e sem pseudônimos
+        terminais_unificados[estacao] = {"pseudonimos": [], "regiao": None}
+        novas_estacoes.append(estacao)
+
+    if novas_estacoes:
+        print(f"Arquivo {ARQUIVO_TERMINAIS_UNIFICADOS.name} atualizado com {len(novas_estacoes)} novas estações.")
+        salvar_terminais_unificados(terminais_unificados)
 
 def construir_mapeamento_duplicados(terminais_unificados):
     mapeamento = {}
@@ -264,56 +392,24 @@ def obter_regiao_estacao(estacao, terminais_unificados):
 # -------- Classificação interativa atualizada para alterar a região dos terminais unificados --------
 
 def salvar_terminais_unificados(terminais_unificados):
+    # Cria uma cópia limpa antes de salvar
+    copia = {}
+
+    # Conjunto de todos os pseudônimos já registrados
+    todos_pseudonimos = set()
+    for info in terminais_unificados.values():
+        if isinstance(info, dict):
+            pseudos = info.get("pseudonimos", [])
+            todos_pseudonimos.update(pseudos)
+
+    for terminal, info in terminais_unificados.items():
+        if terminal in todos_pseudonimos:
+            print(f"[Aviso] Ignorando '{terminal}' porque já está como pseudônimo de outro terminal.")
+            continue  # não adiciona esse terminal principal pois é pseudônimo
+        copia[terminal] = info
+
     with open(ARQUIVO_TERMINAIS_UNIFICADOS, "w", encoding="utf-8") as f:
-        json.dump(terminais_unificados, f, indent=2, ensure_ascii=False)
-
-def classificar_estacoes_interativamente(estacoes, terminais_unificados):
-    for estacao in estacoes:
-        terminal_principal = estacao
-        for principal, info in terminais_unificados.items():
-            if estacao == principal:
-                terminal_principal = principal
-                break
-            # info pode ser lista ou dict
-            pseudos = []
-            if isinstance(info, dict):
-                pseudos = info.get("pseudonimos", [])
-            elif isinstance(info, list):
-                pseudos = info
-            if estacao in pseudos:
-                terminal_principal = principal
-                break
-        
-        # Garante que terminais_unificados[terminal_principal] é dict para evitar erros
-        if terminal_principal not in terminais_unificados or not isinstance(terminais_unificados[terminal_principal], dict):
-            terminais_unificados[terminal_principal] = {"pseudonimos": []}
-
-        # Se região já atribuída, pula
-        if "regiao" in terminais_unificados[terminal_principal]:
-            continue
-
-        print(f"\nA estação '{estacao}' (terminal principal: '{terminal_principal}') pertence a qual região?")
-        print("[1] Norte")
-        print("[2] Sul")
-        print("[3] Leste")
-        print("[4] Oeste")
-        print("[5] Centro")
-        print("[6] Ignorar (atribuir como indefinido)")
-
-        escolha = input("Escolha uma opção [1-6]: ").strip()
-
-        if escolha in {"1", "2", "3", "4", "5"}:
-            chaves = ["NORTE", "SUL", "LESTE", "OESTE", "CENTRO"]
-            regiao_escolhida = chaves[int(escolha) - 1]
-            terminais_unificados[terminal_principal]["regiao"] = regiao_escolhida
-            print(f"Terminal '{terminal_principal}' classificado como {regiao_escolhida}.")
-        elif escolha == "6":
-            terminais_unificados[terminal_principal]["regiao"] = None
-            print(f"Terminal '{terminal_principal}' marcado como indefinido (ignorando).")
-        else:
-            print("Entrada inválida. Terminal não classificado. Será perguntado novamente na próxima execução.")
-
-    salvar_terminais_unificados(terminais_unificados)
+        json.dump(copia, f, indent=2, ensure_ascii=False)
 
 # -------- Função principal --------
 
@@ -321,14 +417,15 @@ def main():
     df_total = carregar_dados()
 
     terminais_unificados = carregar_terminais_unificados()
-    if not terminais_unificados:
-        print("Terminais unificados não carregados, encerrando.")
-        return
+
+    # Carrega e constrói grafo bruto para descobrir estações faltantes
+    G = construir_grafo(df_total)
+    
+    # Atualiza terminais_unificados com estações ainda não mapeadas
+    atualizar_terminais_unificados(G, terminais_unificados)
 
     mapeamento_duplicados = construir_mapeamento_duplicados(terminais_unificados)
-    nos_unicos = list(terminais_unificados.keys())
 
-    G = construir_grafo(df_total)
     G_filtrado = construir_grafo_filtrado(G, mapeamento_duplicados)
 
     # Atribuir a região como atributo de cada nó no grafo filtrado
@@ -336,35 +433,10 @@ def main():
         regiao = obter_regiao_estacao(estacao, terminais_unificados)
         G_filtrado.nodes[estacao]["regiao"] = regiao
 
-    # Mostrar regiões das estações no grafo filtrado (exemplo)
-    print("\nEstações no grafo filtrado com suas regiões:")
-    for estacao in G_filtrado.nodes:
-        regiao = obter_regiao_estacao(estacao, terminais_unificados)
-        print(f"{estacao} -> Região: {regiao}")
+    G_analisado = G_filtrado  # Sem filtro por grau mínimo
+    print(f"\nAnalisando o grafo filtrado completo com {len(G_analisado.nodes())} nós.")
 
-    print("\nEscolha uma das opções:")
-    print("[1] Classificar estações por região (interativo)")
-    print("[2] Ir direto para análise e visualização do grafo")
-
-    opcao = input("Sua escolha [1/2]: ").strip()
-
-    if opcao == "1":
-        regioes = carregar_regioes()
-        classificar_estacoes_interativamente(nos_unicos, regioes)
-        print("\nClassificação concluída. Execute novamente para visualizar o grafo com cores por região.")
-        return
-
-    print("\nConstruindo grafo filtrado com estações únicas consolidadas...")
-
-    grau_minimo = solicitar_grau_minimo()
-
-    if grau_minimo is None:
-        G_analisado = G_filtrado
-        print(f"\nAnalisando o grafo filtrado completo com {len(G_analisado.nodes())} nós.")
-    else:
-        G_analisado = filtrar_grafo_por_grau(G_filtrado, grau_minimo)
-
-    desenhar_grafo(G_analisado, grau_minimo=grau_minimo)
+    desenhar_grafo(G_analisado)
 
     metricas = calcular_metricas(G_analisado)
 
@@ -377,30 +449,42 @@ def main():
     else:
         print("Diâmetro não foi calculado.")
 
-    print("\nGrau de Entrada Ponderado (exemplo das 5 maiores estações):")
-    for no, val in sorted(metricas["grau_entrada_ponderado"].items(), key=lambda x: x[1], reverse=True)[:5]:
+    print("\nGrau de Entrada Ponderado (exemplo das 10 maiores estações):")
+    for no, val in sorted(metricas["grau_entrada_ponderado"].items(), key=lambda x: x[1], reverse=True)[:10]:
         print(f" - {no}: {val:.2f}")
 
-    print("\nGrau de Saída Ponderado (exemplo das 5 maiores estações):")
-    for no, val in sorted(metricas["grau_saida_ponderado"].items(), key=lambda x: x[1], reverse=True)[:5]:
+    print("\nGrau de Saída Ponderado (exemplo das 10 maiores estações):")
+    for no, val in sorted(metricas["grau_saida_ponderado"].items(), key=lambda x: x[1], reverse=True)[:10]:
         print(f" - {no}: {val:.2f}")
 
-    print("\nCentralidade PageRank (exemplo das 5 maiores estações):")
-    for no, val in sorted(metricas["pagerank"].items(), key=lambda x: x[1], reverse=True)[:5]:
+    print("\nCentralidade PageRank (exemplo das 10 maiores estações):")
+    for no, val in sorted(metricas["pagerank"].items(), key=lambda x: x[1], reverse=True)[:10]:
+        print(f" - {no}: {val:.4f}")
+    
+    print("\nCentralidade de Grau (Top 10):")
+    for no, val in sorted(metricas["grau"].items(), key=lambda x: x[1], reverse=True)[:10]:
         print(f" - {no}: {val:.4f}")
 
-    print("\nFinalizado.\n")
+    print("\nCentralidade de Intermediação (Top 10):")
+    for no, val in sorted(metricas["intermediacao"].items(), key=lambda x: x[1], reverse=True)[:10]:
+        print(f" - {no}: {val:.4f}")
 
-    labels = {str(i+1): n for i, n in enumerate(G_analisado.nodes)}
-    while True:
-        entrada = input("\nDigite o número do nó para saber o nome da estação (ou 'sair' para encerrar): ").strip()
-        if entrada.lower() == "sair":
-            print("Encerrando o programa.")
-            break
-        if entrada not in labels:
-            print("Entrada inválida. Encerrando o programa.")
-            break
-        print(f"Nó {entrada} corresponde à estação: {labels[entrada]}")
+    print("\nCentralidade de Proximidade (Top 10):")
+    for no, val in sorted(metricas["proximidade"].items(), key=lambda x: x[1], reverse=True)[:10]:
+        print(f" - {no}: {val:.4f}")
+
+    if metricas["autovetor"]:
+        print("\nCentralidade de Autovetor (Top 10):")
+        for no, val in sorted(metricas["autovetor"].items(), key=lambda x: x[1], reverse=True)[:10]:
+            print(f" - {no}: {val:.4f}")
+
+    analisar_mundo_pequeno(G_analisado)
+    plotar_distribuicao_grau(G_analisado)
+    calcular_assortatividade(G_analisado)
+    detectar_comunidades(G_analisado)
+    analisar_robustez(G_analisado, proporcao=0.1)
+
+    print("\nAnálise finalizada.\n")
 
 if __name__ == "__main__":
     main()
