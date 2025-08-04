@@ -1,24 +1,31 @@
 {
   "METRO ITA": {
     "pseudonimos": [
+      "METR ITAQUE",
+      "METR ITAQUERA",
       "METRO ITAQU",
       "METRO ITAQUE",
       "METRO ITAQUER",
       "METRO ITAQUERA",
-      "METRO ITAQUERA CIRC"
+      "METRO ITAQUERA CIRC",
+      "METRO ITQUERA"
     ],
     "regiao": "Zona Leste"
   },
   "TERM BANDEIR": {
     "pseudonimos": [
-      "TERM BANDEIRA"
+      "TERM BANDEIRA",
+      "TERM. BANDEIRA",
+      "TERM.BANDEIRA"
     ],
     "regiao": "Centro"
   },
   "PCA DA S": {
     "pseudonimos": [
       "PCA DA SE",
-      "PCA DA SE CIRC"
+      "PCA DA SE CIRC",
+      "PCA. DA SE",
+      "PRACA DA SE"
     ],
     "regiao": "Centro"
   },
@@ -31,38 +38,43 @@
   },
   "PQ D PEDRO": {
     "pseudonimos": [
-      "T.PQ D.PEDROII",
       "PARQUE D. PEDRO II",
       "PQ D PEDRO II",
-      "T PQ D PEDRO",
-      "T PQ D PEDRO II",
-      "TER PQ D PEDRO",
-      "TERM PQ D PEDRO",
-      "TERM PQ D PEDRO II",
-      "TERM P D PED",
-      "TERM P D PEDRO",
-      "TERM P D PEDRO II",
-      "T PARQUE D P II",
-      "TERM PQ D PEDR",
+      "PQ DOM PEDRO",
       "T P D PEDRO",
       "T P D PEDRO II",
       "T PARQUE D P II",
-      "TERM.PD PEDRO II",
-      "TERMP Q D PEDRO II",
+      "T PQ D PEDRO",
+      "T PQ D PEDRO II",
+      "T.D.PEDRO II",
+      "T.PQ D.PEDROII",
       "T.PQ.D.PEDRO II",
-      "T.D.PEDRO II"
+      "TER P Q D PEDRO",
+      "TER PQ D PEDRO",
+      "TERM P D PED",
+      "TERM P D PEDRO",
+      "TERM P D PEDRO II",
+      "TERM PQ D PEDR",
+      "TERM PQ D PEDRO",
+      "TERM PQ D PEDRO II",
+      "TERM.PD PEDRO II",
+      "TERMP Q D PEDRO II"
     ],
     "regiao": "Zona Leste"
   },
   "CIRCULA": {
     "pseudonimos": [
-      "CIRCULAR"
+      "CIRCULAR",
+      "CRCULAR"
     ],
     "regiao": "Centro"
   },
   "SAO MATEUS": {
     "pseudonimos": [
+      "T S MATEUS",
+      "T SAO MAETEUS",
       "T SAO MATEUS",
+      "T SÃO MATEUS",
       "TER SAO MATEUS",
       "TERM SAO MATEU",
       "TERM SAO MATEUS",
@@ -84,17 +96,17 @@
   },
   "BARRA FUNDA": {
     "pseudonimos": [
-      "TERM BARRA FUNDA",
       "M BARRA FUN",
       "M BARRA FUND",
       "M BARRA FUNDA",
       "M. BARRA FUNDA",
       "MBARRA FUNDA",
       "MET BARRA FUNDA",
+      "METRO B FUNDA",
       "METRO BARRA FU",
       "METRO BARRA FUND",
       "METRO BARRA FUNDA",
-      "METRO B FUNDA"
+      "TERM BARRA FUNDA"
     ],
     "regiao": "Zona Oeste"
   },
@@ -107,6 +119,7 @@
   },
   "PIRITUBA": {
     "pseudonimos": [
+      "CID PIRITUBA",
       "TERM PIRITUBA",
       "TERM.PIRITUBA",
       "TERMINAL PIRITUBA",
@@ -130,7 +143,11 @@
   },
   "METRO VILA MADALEN": {
     "pseudonimos": [
-      "METRO VILA MADALENA"
+      "M VILA MADALENA",
+      "METRO V MADALENA",
+      "METRO VILA MADALENA",
+      "METRO VILA MARIANA",
+      "METRO VL MADALENA"
     ],
     "regiao": "Zona Oeste"
   },
@@ -145,6 +162,7 @@
   },
   "METRO TUCUR": {
     "pseudonimos": [
+      "METR TUCURUVI",
       "METRO TUCURUV",
       "METRO TUCURUVI"
     ],
@@ -158,6 +176,7 @@
   },
   "METRO SANTAN": {
     "pseudonimos": [
+      "MET SANTANA",
       "METRO SANTANA"
     ],
     "regiao": "Zona Norte"
@@ -170,6 +189,7 @@
   },
   "CAMPO LIMPO": {
     "pseudonimos": [
+      "JD CAMPO LIMPO",
       "T CAMPO LIMPO",
       "TERM CAMPO LIMPO"
     ],
@@ -177,6 +197,7 @@
   },
   "TERM PARADA INGLES": {
     "pseudonimos": [
+      "M PARADA INGLE",
       "TERM PARADA INGLESA"
     ],
     "regiao": "Zona Norte"
@@ -213,13 +234,15 @@
   },
   "CPTM GUAIANAZE": {
     "pseudonimos": [
-      "CPTM GUAIANAZES"
+      "CPTM GUAIANAZES",
+      "ES CPTM GUAIANAZ"
     ],
     "regiao": "Zona Leste"
   },
   "SAO MIGUEL": {
     "pseudonimos": [
       "T SAO MIGUEL",
+      "TER SAO MIGUEL",
       "TERM SAO MIGUEL",
       "TERM.SAO MIGUEL"
     ],
@@ -227,7 +250,9 @@
   },
   "JD CAMARGO VELH": {
     "pseudonimos": [
-      "JD CAMARGO VELHO"
+      "J CAMARGO VELHO",
+      "JD CAMARGO VELHO",
+      "JD CARMARGO VELHO"
     ],
     "regiao": "Zona Leste"
   },
@@ -241,7 +266,10 @@
   },
   "CID KEMEL": {
     "pseudonimos": [
-      "CID KEMEL II"
+      "CID KEMEL II",
+      "CIDADE KEMEL",
+      "CIDADE KEMEL I",
+      "CIDADE KEMEL II"
     ],
     "regiao": "Zona Leste"
   },
@@ -254,12 +282,14 @@
   },
   "EST ITAIM PAULISTA": {
     "pseudonimos": [
+      "CPTM ITAIM PAULISTA",
       "ITAIM PAULISTA"
     ],
     "regiao": "Zona Leste"
   },
   "MT ARTUR AL": {
     "pseudonimos": [
+      "METR ARTUR ALVIM",
       "MT ARTUR ALVIN"
     ],
     "regiao": "Zona Leste"
@@ -267,18 +297,27 @@
   "EST GUAIANAZ": {
     "pseudonimos": [
       "EST GUAIANAZES",
+      "EST GUAIANAZES C",
+      "EST GUAIANZ CP",
+      "ETC GUAIANAZES",
       "GUAIANAZES"
     ],
     "regiao": "Zona Leste"
   },
   "CID TIRADENTES": {
     "pseudonimos": [
+      "CID.TIRADENTES",
+      "CIDADE TIRADENTES",
       "T CID TIRADEN",
       "T CID TIRADENTE",
       "T CID TIRADENTES",
+      "T CID TIRANDENTES",
       "TE CID TIRADENTES",
       "TERM CID TIRADE",
-      "TERM CID TIRADENTES"
+      "TERM CID TIRADENTES",
+      "TERM CIDADE TIRAD",
+      "TERM CIDADE TIRADEN",
+      "TERM CIDADE TIRADENTES"
     ],
     "regiao": "Zona Leste"
   },
@@ -288,14 +327,6 @@
     ],
     "regiao": "Centro"
   },
-  "CIDADE TIRADENTES": {
-    "pseudonimos": [
-      "TERM CIDADE TIRAD",
-      "TERM CIDADE TIRADEN",
-      "TERM CIDADE TIRADENTES"
-    ],
-    "regiao": "Zona Leste"
-  },
   "JD LIMOEIRO": {
     "pseudonimos": [
       "LIMOEIRO"
@@ -304,20 +335,17 @@
   },
   "COHAB FAZE DO CAR": {
     "pseudonimos": [
+      "COHAB FAZ DO CARMO",
       "COHAB FAZE DO CARMO"
     ],
     "regiao": "Zona Leste"
   },
   "E.T.ITAQUERA": {
     "pseudonimos": [
+      "E T ITAQUERA",
+      "E. T. ITAQUERA",
       "ITAQUERA",
       "TERM ITAQUERA"
-    ],
-    "regiao": "Zona Leste"
-  },
-  "METR ITAQUE": {
-    "pseudonimos": [
-      "METR ITAQUERA"
     ],
     "regiao": "Zona Leste"
   },
@@ -329,7 +357,8 @@
   },
   "TERM SACO": {
     "pseudonimos": [
-      "TERM SACOMA"
+      "TERM SACOMA",
+      "TERM. SACOMA"
     ],
     "regiao": "Zona Sul"
   },
@@ -342,31 +371,32 @@
   },
   "SANTO AMAR": {
     "pseudonimos": [
+      "SANT0 AMARO",
       "SANTO AMARO",
+      "STO AMARO",
       "TERM SANTO AM",
       "TERM SANTO AMARAO",
-      "TERM SANTO AMARO"
+      "TERM SANTO AMARO",
+      "TERM STO AMARO",
+      "TERM.STO AMARO"
     ],
     "regiao": "Zona Sul"
   },
   "IBIRAPUERA": {
     "pseudonimos": [
-      "PQ.DO IBIRAPUERA"
+      "JD IBIRAPUERA",
+      "PQ IBIRAPUERA",
+      "PQ.DO IBIRAPUERA",
+      "SH C IBIRAPUERA",
+      "SHOP IBIRAPUERA"
     ],
     "regiao": "Zona Sul"
   },
   "AUTODROMO": {
     "pseudonimos": [
-      "ESTACAO AUTODROMO",
       "AUTÓDROMO",
-      "CPTM AUTODROMO"
-    ],
-    "regiao": "Zona Sul"
-  },
-  "STO AMARO": {
-    "pseudonimos": [
-      "TERM STO AMARO",
-      "TERM.STO AMARO"
+      "CPTM AUTODROMO",
+      "ESTACAO AUTODROMO"
     ],
     "regiao": "Zona Sul"
   },
@@ -380,13 +410,18 @@
     "pseudonimos": [
       "T GUARAPIRANGA",
       "T.GUARAPIRANGA",
-      "TERM GUARAPIRANGA"
+      "TERM GUARAPIRANGA",
+      "VIP GUARAPIRANGA"
     ],
     "regiao": "Zona Sul"
   },
   "TERM CAPELINH": {
     "pseudonimos": [
-      "TERM CAPELINHA"
+      "TER CAPELINHA",
+      "TERM CAPELINHA",
+      "TERM. CAPELINHA",
+      "TERM.CAPELINHA",
+      "TERMINAL CAPELINHA"
     ],
     "regiao": "Zona Sul"
   },
@@ -405,6 +440,7 @@
   },
   "PCA RAMOS": {
     "pseudonimos": [
+      "PC RAMOS AZ",
       "PCA RAMOS AZ",
       "PCA RAMOS AZEVE",
       "PCA RAMOS AZEVEDO",
@@ -428,13 +464,16 @@
   },
   "CDHU RAPOSO TAVARES": {
     "pseudonimos": [
+      "COH RAP TAVARES",
+      "COHAB RAPOSO TAVAR",
       "RAPOSO TAVARES"
     ],
     "regiao": "Zona Oeste"
   },
   "JD PAULISTA": {
     "pseudonimos": [
-      "JD PAULISTANO"
+      "JD PAULISTANO",
+      "PAULISTA"
     ],
     "regiao": "Zona Oeste"
   },
@@ -446,8 +485,10 @@
   },
   "CONEXAO VILA": {
     "pseudonimos": [
+      "CONEXAO VILA IORIO",
       "CONEXAO VILA LORI",
-      "CONEXAO VILA LORIO"
+      "CONEXAO VILA LORIO",
+      "VILA IORIO"
     ],
     "regiao": "Zona Norte"
   },
@@ -460,15 +501,11 @@
     ],
     "regiao": "Zona Norte"
   },
-  "CONEXAO VILA IORIO": {
-    "pseudonimos": [
-      "VILA IORIO"
-    ],
-    "regiao": "Zona Norte"
-  },
   "CONEX PETRON PORT": {
     "pseudonimos": [
-      "CONEX PETRON PORTELA"
+      "CON PETRON PORT",
+      "CONEX PETRON PORTELA",
+      "CONEX PETRONIO PORT"
     ],
     "regiao": "Zona Norte"
   },
@@ -480,16 +517,11 @@
   },
   "JD SAO PAULO": {
     "pseudonimos": [
+      "JD SAO CARLOS",
+      "M JD SAO PAUL",
       "METRO JD SAO PAULO"
     ],
     "regiao": "Zona Norte"
-  },
-  "CIDADE KEMEL": {
-    "pseudonimos": [
-      "CIDADE KEMEL I",
-      "CIDADE KEMEL II"
-    ],
-    "regiao": "Zona Leste"
   },
   "SHOP ARICA": {
     "pseudonimos": [
@@ -506,11 +538,14 @@
     "regiao": "Zona Leste"
   },
   "TERM VL CARRAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "TERM V CARRAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T V CARRAO",
+      "T VILA CARRAO",
+      "TER VILA CARRAO",
+      "TERM CARRAO",
+      "TERM V CARRAO",
+      "TERM VILA CARRAO"
+    ],
     "regiao": "Zona Leste"
   },
   "PCA SILVIO ROMERO": {
@@ -518,15 +553,9 @@
     "regiao": "Zona Leste"
   },
   "TERM S MATEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T SÃO MATEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "TERM VILA CARRAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TERM SÃO MATEUS"
+    ],
     "regiao": "Zona Leste"
   },
   "JD VILA FORMOSA": {
@@ -538,15 +567,22 @@
     "regiao": "Centro"
   },
   "TERM.V.PRUDENTE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TER VL PRUDENTE"
+    ],
     "regiao": "Zona Leste"
   },
   "TERM D PEDRO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TER P D PEDRO"
+    ],
     "regiao": "Zona Leste"
   },
   "VILA DALILA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA AMELIA",
+      "VILA DALVA"
+    ],
     "regiao": "Zona Leste"
   },
   "TERMINAL VILA CARRÃO": {
@@ -594,15 +630,21 @@
     "regiao": "Zona Oeste"
   },
   "PQ SAO DOMINGOS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ S DOMINGOS"
+    ],
     "regiao": "Zona Oeste"
   },
   "CID D ABRIL 3ª G": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CID DABRIL 3 GLEBA"
+    ],
     "regiao": "Zona Oeste"
   },
   "TAIPAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ TAIPAS"
+    ],
     "regiao": "Zona Norte"
   },
   "JD DONARIA": {
@@ -610,7 +652,9 @@
     "regiao": "Zona Norte"
   },
   "MORRO DOCE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ MORRO DOCE"
+    ],
     "regiao": "Zona Oeste"
   },
   "SOL NASCENTE": {
@@ -630,14 +674,12 @@
     "regiao": "Zona Oeste"
   },
   "SANTA MONICA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "STA MONICA"
+    ],
     "regiao": "Zona Oeste"
   },
   "VILA CLARICE": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "STA MONICA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
@@ -650,10 +692,6 @@
     "regiao": "Zona Oeste"
   },
   "RECANTO DOS HUMILDES": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "PQ S DOMINGOS": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
@@ -682,7 +720,9 @@
     "regiao": "Zona Norte"
   },
   "VL ZATTI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA ZATT"
+    ],
     "regiao": "Zona Norte"
   },
   "JD NARDINI": {
@@ -690,7 +730,9 @@
     "regiao": "Zona Oeste"
   },
   "MET TUCURUVI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TUCURUVI"
+    ],
     "regiao": "Zona Norte"
   },
   "VILA SABRINA": {
@@ -702,35 +744,35 @@
     "regiao": "Zona Norte"
   },
   "JARDIM ANTARTICA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD ANTARTICA"
+    ],
     "regiao": "Zona Norte"
   },
   "EDU CHAVES": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ EDU CHAVES"
+    ],
     "regiao": "Zona Norte"
   },
   "CEM PQ DOS PINHE": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METR TUCURUVI": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "VILA NOVA GALVAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "V NOVA GALVAO"
+    ],
     "regiao": "Zona Norte"
   },
   "CACHOEIRA": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "JD CAMPO LIMPO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JARDIM BRASIL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD BRASIL"
+    ],
     "regiao": "Zona Norte"
   },
   "JD FLOR DE MAIO": {
@@ -738,15 +780,15 @@
     "regiao": "Zona Norte"
   },
   "JARDIM PERY ALTO": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "JD PERY ALTO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD PERY ALTO"
+    ],
     "regiao": "Zona Norte"
   },
   "METRO ST CECILIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO SANTA CECIL"
+    ],
     "regiao": "Centro"
   },
   "JD PERY": {
@@ -758,22 +800,18 @@
     "regiao": "Zona Norte"
   },
   "VILA ZILDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "JD BRASIL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA GILDA"
+    ],
     "regiao": "Zona Norte"
   },
   "MUSEU IPIRANGA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "MUSEU DO IPIRANGA"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA DIONIZIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "JD ANTARTICA": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
@@ -786,11 +824,16 @@
     "regiao": "Zona Norte"
   },
   "VL NV CACHOEIRINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CVN CACHOEIRINHA",
+      "TTVN CACHOEIRINHA"
+    ],
     "regiao": "Zona Norte"
   },
   "CONJ BANCARIOS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CJ DOS BANCARIOS"
+    ],
     "regiao": "Zona Norte"
   },
   "COHAB ANTARTICA": {
@@ -810,23 +853,25 @@
     "regiao": "Zona Norte"
   },
   "VILA AYROSA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA ROSA"
+    ],
     "regiao": "Zona Oeste"
   },
   "JACANA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JAÇANA"
+    ],
     "regiao": "Zona Norte"
   },
   "HOSP CLINICAS": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "V NOVA GALVAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JARDIM LABITARY": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD LABITARY"
+    ],
     "regiao": "Zona Norte"
   },
   "JD FONTALIS": {
@@ -837,28 +882,14 @@
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "M PARADA INGLE": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "JD LABITARY": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "DIB - CIRCULAR": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JAÇANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "PARQUE NOVO MUNDO": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "PQ EDU CHAVES": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ NOVO MUNDO"
+    ],
     "regiao": "Zona Norte"
   },
   "JD GUANCA": {
@@ -866,7 +897,9 @@
     "regiao": "Zona Norte"
   },
   "TERM ROD TIETE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TERM RODOVIARIO TIETE"
+    ],
     "regiao": "Zona Norte"
   },
   "LGO DA CONC": {
@@ -878,19 +911,20 @@
     "regiao": "Zona Norte"
   },
   "METRO BELEM": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METR BELEM"
+    ],
     "regiao": "Zona Leste"
-  },
-  "PQ NOVO MUNDO": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
   },
   "CANGAIBA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "EST DA LUZ": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "EST LUZ",
+      "ESTACAO DA LUZ"
+    ],
     "regiao": "Centro"
   },
   "CEASA": {
@@ -901,20 +935,22 @@
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "TERM CARRAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD SANTA CRUZ": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M.SANTA CRUZ"
+    ],
     "regiao": "Zona Sul"
   },
   "ANHEMBI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "ANEHEMBI"
+    ],
     "regiao": "Zona Norte"
   },
   "JD PRIMAVERA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ PRIMAVERA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD DAMASCENO": {
@@ -930,7 +966,9 @@
     "regiao": "Zona Norte"
   },
   "JD VISTA ALEGRE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD.VISTA ALEGRE"
+    ],
     "regiao": "Zona Norte"
   },
   "T A E CARVALHO": {
@@ -941,28 +979,20 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "TER SAO MIGUEL": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "ERMELINO MATARAZZO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD CARMARGO VELHO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "ERM MATARAZZO"
+    ],
     "regiao": "Zona Leste"
   },
   "ARTUR ALVIM": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METRO ITQUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD SANTO ANTONIO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ STO ANTONIO"
+    ],
     "regiao": "Zona Sul"
   },
   "JARDIM DANFER": {
@@ -970,19 +1000,32 @@
     "regiao": "Zona Leste"
   },
   "JD CAMARGO NOVO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "J CAMARGO NOVO"
+    ],
     "regiao": "Zona Leste"
   },
   "T.A.E.CARVALHO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "C.A.E.CARVALHO"
+    ],
     "regiao": "Zona Leste"
   },
   "METRO A. ALVIM": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO A ALVIM",
+      "METRO A ALVIN",
+      "METRO ARTHUR ALVIM",
+      "METRO ARTUR ALVIM"
+    ],
     "regiao": "Zona Leste"
   },
   "JD DAS OLIVEIRAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM DAS OLIVEIRAS",
+      "JD OLIVEIRAS",
+      "JD. DAS OLIVEIRAS"
+    ],
     "regiao": "Zona Leste"
   },
   "JD NELIA": {
@@ -990,11 +1033,19 @@
     "regiao": "Zona Leste"
   },
   "CJ ENCOST NORTE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CONJ ENCOSTA NORTE"
+    ],
     "regiao": "Zona Leste"
   },
   "VL S FRANCISCO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD SAO FRANCISCO",
+      "LGO S FRANCIS",
+      "LGO S FRANCISCO",
+      "LGO SAO FRANCISCO",
+      "VL.S FRANCISCO"
+    ],
     "regiao": "Zona Oeste"
   },
   "VILA CURUCA": {
@@ -1006,23 +1057,30 @@
     "regiao": "Zona Leste"
   },
   "CJ JOSE BONIFACIO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "COHAB JOSE BONIFACIO",
+      "COHAB JOSE BONIFACIO C",
+      "CONJ JOSE BONIFACIO",
+      "CPTM JOSE BONIFACIO",
+      "EST JOSE BONIFACIO"
+    ],
     "regiao": "Zona Leste"
   },
   "OLIVEIRINHA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "J CAMARGO NOVO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD SAO MARTINHO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD S MARTINHO"
+    ],
     "regiao": "Zona Leste"
   },
   "CPTM VILA MARA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CPTM V MARA",
+      "PQ VILA MARIA"
+    ],
     "regiao": "Zona Leste"
   },
   "JD ROMANO": {
@@ -1034,19 +1092,13 @@
     "regiao": "Zona Leste"
   },
   "MTR V MATILDE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "MT VLA MATILDE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD OLIVEIRAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "J CAMARGO VELHO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METR V MATI",
+      "METRO V MATILD",
+      "METRO V MATILDE",
+      "METRO VL MATILDE",
+      "MT VLA MATILDE"
+    ],
     "regiao": "Zona Leste"
   },
   "JD INDAIA": {
@@ -1058,22 +1110,6 @@
     "regiao": "Zona Leste"
   },
   "ITAIM PTA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD S MARTINHO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CPTM V MARA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JARDIM DAS OLIVEIRAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CONJ ENCOSTA NORTE": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -1093,59 +1129,48 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "JD. DAS OLIVEIRAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "C.A.E.CARVALHO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "SHOP.PENHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SHOP PENHA"
+    ],
     "regiao": "Zona Leste"
   },
   "TERM.PRIN.ISABEL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T.PR.ISABEL",
+      "T.PRINC.ISABEL",
+      "TERM. PRINC. ISABEL",
+      "TERM.PRINC.ISABEL"
+    ],
     "regiao": "Centro"
   },
   "ACLIMACAO": {
     "pseudonimos": [],
     "regiao": "Centro"
   },
-  "TERM.PRINC.ISABEL": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "T S MATEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD DA CONQUISTA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "JD STO ANDRE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD SANTO ANDRE"
+    ],
     "regiao": "Zona Leste"
   },
   "JD IV CENTENARIO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T CID TIRANDENTES": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD. IV CENTERNARIO"
+    ],
     "regiao": "Zona Leste"
   },
   "BARRO BRANCO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "COHAB BARRO BRANCO"
+    ],
     "regiao": "Zona Norte"
   },
   "M ITAQUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "COHAB FAZ DO CARMO": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -1154,23 +1179,21 @@
     "regiao": "Zona Leste"
   },
   "VL YOLAND": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA YOLANDA"
+    ],
     "regiao": "Zona Leste"
   },
   "PRESTES MAIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "COHAB PRESTES MAIA"
+    ],
     "regiao": "Centro"
   },
-  "E. T. ITAQUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD NOVA VITORIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JARDIM NOVA VITORIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM NOVA VITORIA"
+    ],
     "regiao": "Zona Leste"
   },
   "COHAB JUSCELINO": {
@@ -1181,23 +1204,7 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "COHAB JOSE BONIFACIO C": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD NSA SRA DO CARMO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T V CARRAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T SAO MAETEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD SANTO ANDRE": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -1205,40 +1212,26 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "TER VILA CARRAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD RODOLFO PIRANI": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "VILA YOLANDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "EST JOSE BONIFACIO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "SHOP C L ARICANDUVA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METR BELEM": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SHOP.ARICANDUVA"
+    ],
     "regiao": "Zona Leste"
   },
   "METRO CARRAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METR CARRAO"
+    ],
     "regiao": "Zona Leste"
   },
-  "JD SAO FRANCISCO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "METRO BRESSER": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METR BRESS"
+    ],
     "regiao": "Zona Leste"
   },
   "JD SOARES": {
@@ -1246,19 +1239,15 @@
     "regiao": "Zona Leste"
   },
   "M GUILHERMINA ESP": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M.GUILHERMINA"
+    ],
     "regiao": "Zona Leste"
   },
   "M TATUAPE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD. IV CENTERNARIO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METR CARRAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TATUAPE"
+    ],
     "regiao": "Zona Leste"
   },
   "PQ SAVOY CITY": {
@@ -1270,14 +1259,14 @@
     "regiao": "Zona Leste"
   },
   "TERM SAPOPEMBA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T SAPOPEMBA",
+      "TERM. SAPOPEMBA",
+      "TERM.SAPOPEMBA"
+    ],
     "regiao": "Zona Leste"
   },
   "EXPRESS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T SAPOPEMBA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -1290,15 +1279,25 @@
     "regiao": "Zona Leste"
   },
   "JARDIM PLANALTO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD PLANALTO"
+    ],
     "regiao": "Zona Leste"
   },
   "JARDIM CELESTE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD CELESTE"
+    ],
     "regiao": "Zona Sul"
   },
   "METRO VL MARIANA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M VILA MARIANA",
+      "METR V MARIANA",
+      "METRO V MARIANA",
+      "METRO V.MARIANA",
+      "MT V MARIANA"
+    ],
     "regiao": "Zona Sul"
   },
   "TERM SAPOP TEOT VILE": {
@@ -1314,19 +1313,21 @@
     "regiao": "Zona Leste"
   },
   "VLA INDUSTRIAL": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "TER VL PRUDENTE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA INDUSTRIAL"
+    ],
     "regiao": "Zona Leste"
   },
   "JD GUAIRACA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD GUARAU"
+    ],
     "regiao": "Zona Leste"
   },
   "SHOP METR TATUAPE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SHOP MET.TATUAPE"
+    ],
     "regiao": "Zona Leste"
   },
   "JD IMPERADOR": {
@@ -1342,31 +1343,25 @@
     "regiao": "Zona Oeste"
   },
   "PÇA REPUBLICA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PCA DA REPUBLICA",
+      "PÇ REPUBLICA"
+    ],
     "regiao": "Centro"
   },
   "VILA GUMERCINDO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD PLANALTO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD. ESTER": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "TERM. SAPOPEMBA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "V CALIFORNIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "VILA INDUSTRIAL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA CALIFORNIA",
+      "VL CALIFORNIA"
+    ],
     "regiao": "Zona Leste"
   },
   "ZOOLOGICO": {
@@ -1374,39 +1369,25 @@
     "regiao": "Zona Sul"
   },
   "J MARIA ESTELA II": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "MT V MARIANA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD MARIA ESTELA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD CLIMAX": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METRO VILA MARIANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "PQ BRISTOL": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "METRO V MARIANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD MARIA ESTELA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ. BRISTOL"
+    ],
     "regiao": "Zona Sul"
   },
   "METRO STA CRUZ": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD CELESTE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO SANTA CRUZ"
+    ],
     "regiao": "Zona Sul"
   },
   "SHOP PLAZA SUL": {
@@ -1414,19 +1395,25 @@
     "regiao": "Zona Sul"
   },
   "METRO JABAQUARA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M JABAQUARA",
+      "MET JABAQUARA",
+      "MTO JABAQUARA"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA BRASILINA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "SH C IBIRAPUERA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA BRASILANDIA"
+    ],
     "regiao": "Zona Sul"
   },
   "METRO PÇ ARVORE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO PC ARVO",
+      "METRO PC DA ARVORE",
+      "METRO PÇA DA ARVORE"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA LIVIERO": {
@@ -1438,7 +1425,9 @@
     "regiao": "Zona Sul"
   },
   "METRO SAO JUDAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO SÃO JUDAS"
+    ],
     "regiao": "Zona Sul"
   },
   "IPIRANGA": {
@@ -1450,7 +1439,9 @@
     "regiao": "Zona Oeste"
   },
   "HELIOPOLIS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "HOSP HELIOPOLIS"
+    ],
     "regiao": "Zona Sul"
   },
   "SHOP IGUATEMI CIRC": {
@@ -1477,10 +1468,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PQ. BRISTOL": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "METRO VERGUEIRO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -1489,12 +1476,10 @@
     "pseudonimos": [],
     "regiao": "Centro"
   },
-  "MET JABAQUARA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "MORUMBI SHOPING": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "MORUMBI SHOPPING"
+    ],
     "regiao": "Zona Sul"
   },
   "JARDIM LUSO": {
@@ -1518,11 +1503,15 @@
     "regiao": "Zona Sul"
   },
   "LGO.S.FRANCISCO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "LGO.SAO FRANCISCO"
+    ],
     "regiao": "Centro"
   },
   "CIDADE LEONOR": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CIDADE LIDER"
+    ],
     "regiao": "Zona Sul"
   },
   "HOSP SAO PAULO": {
@@ -1542,7 +1531,9 @@
     "regiao": "Zona Sul"
   },
   "METRO PARAISO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M PARAISO"
+    ],
     "regiao": "Zona Sul"
   },
   "CIDADE DUTRA": {
@@ -1553,19 +1544,11 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "M JABAQUARA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "CENTRO PARALIMPICO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
   "AEROPORTO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "METRO SÃO JUDAS": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -1586,11 +1569,9 @@
     "regiao": "Zona Oeste"
   },
   "TERM JOAO DIAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TER CAPELINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TE JOAO DIAS"
+    ],
     "regiao": "Zona Sul"
   },
   "VALO VELHO": {
@@ -1602,38 +1583,24 @@
     "regiao": "Zona Sul"
   },
   "JD.VAZ DE LIMA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD VAZ DE LIMA"
+    ],
     "regiao": "Zona Sul"
   },
   "PQ.STO AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "M VILA MARIANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM.CAPELINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "METRO V.MARIANA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T.STO AMARO"
+    ],
     "regiao": "Zona Sul"
   },
   "JD DAS ROSAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "METRO SANTA CRUZ": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD DAS PEDRAS"
+    ],
     "regiao": "Zona Sul"
   },
   "PARQUE DA LAPA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "M VILA MADALENA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
@@ -1646,16 +1613,14 @@
     "regiao": "Zona Oeste"
   },
   "BUTANTA USP": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "BUTANTA- USP"
+    ],
     "regiao": "Zona Oeste"
   },
   "CID.UNIVERSITARIA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
-  },
-  "T.PR.ISABEL": {
-    "pseudonimos": [],
-    "regiao": "Centro"
   },
   "METRO ARMENIA": {
     "pseudonimos": [],
@@ -1666,7 +1631,9 @@
     "regiao": "Zona Oeste"
   },
   "PÇA RAMOS AZEVEDO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PRAÇA RAMOS DE AZEVEDO"
+    ],
     "regiao": "Centro"
   },
   "VILA POMPEIA": {
@@ -1682,7 +1649,12 @@
     "regiao": "Centro"
   },
   "PQ CONTINENTAL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "P CONTINENTAL",
+      "PARQUE CONTINENTAL",
+      "PQ CONTINENAL",
+      "SHOP CONTINENTAL"
+    ],
     "regiao": "Zona Oeste"
   },
   "USP": {
@@ -1690,16 +1662,10 @@
     "regiao": "Zona Oeste"
   },
   "CIDADE UNIVERSIT": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CIDADE UNIVERST"
+    ],
     "regiao": "Zona Oeste"
-  },
-  "CIDADE UNIVERST": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "CRCULAR": {
-    "pseudonimos": [],
-    "regiao": "Centro"
   },
   "H.CLINICAS CIRCULAR": {
     "pseudonimos": [],
@@ -1721,10 +1687,6 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "METR V MARIANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "VILA ANASTACIO": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
@@ -1737,10 +1699,6 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "TER P Q D PEDRO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "TERMINAL BUTANTA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
@@ -1750,34 +1708,22 @@
     "regiao": "Zona Oeste"
   },
   "JARDIM GUARUJA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD VAZ DE LIMA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TE JOAO DIAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD GUARUJA"
+    ],
     "regiao": "Zona Sul"
   },
   "INST LUCY MONTORO": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "JD IBIRAPUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JARDIM MITSUTANI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD MITSUTANI"
+    ],
     "regiao": "Zona Sul"
   },
   "JD.ROSAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM. CAPELINHA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -1785,25 +1731,20 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "PARQUE CONTINENTAL": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
   "JD JOÃO XXIII": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD JOAO XXIII"
+    ],
     "regiao": "Zona Oeste"
   },
   "SANTA CECILIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M SANTA CECILIA",
+      "METRO SANTA",
+      "PQ SANTA CECILIA",
+      "STA CECILIA"
+    ],
     "regiao": "Centro"
-  },
-  "STA CECILIA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "COHAB RAPOSO TAVAR": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "VILA IDA": {
     "pseudonimos": [],
@@ -1814,18 +1755,18 @@
     "regiao": "Zona Oeste"
   },
   "LGO POLVORA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "LGO DA POLVORA"
+    ],
     "regiao": "Centro"
   },
   "JD DABRIL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD D ABRIL"
+    ],
     "regiao": "Zona Oeste"
   },
   "JD PERI PERI": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "JD JOAO XXIII": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
@@ -1841,20 +1782,17 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "P CONTINENTAL": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
   "SHOP MORUMBI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SHOPP MORUMBI",
+      "SHOPPING MORUMBI"
+    ],
     "regiao": "Zona Sul"
   },
   "JD. MARIA LUIZA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "VILA DALVA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD MA LUIZA"
+    ],
     "regiao": "Zona Oeste"
   },
   "JD BOA VISTA": {
@@ -1868,10 +1806,6 @@
   "E HEBRAICA REBOUÇAS": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
-  },
-  "M PARAISO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
   },
   "JD PRINCESA": {
     "pseudonimos": [],
@@ -1926,31 +1860,25 @@
     "regiao": "Zona Norte"
   },
   "JD PAINEIRAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ PAINEIRAS"
+    ],
     "regiao": "Zona Norte"
   },
   "CPTM VILA AURORA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA AURORA"
+    ],
     "regiao": "Zona Norte"
   },
   "VOITH": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "VILA AURORA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "CVN CACHOEIRINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JD ELISA MARIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "JD.VISTA ALEGRE": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD ELIS MARIA"
+    ],
     "regiao": "Zona Norte"
   },
   "SITIO D FRANCOS": {
@@ -1961,21 +1889,11 @@
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "PQ TAIPAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "ESTANCIA JARAGUA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "ESTACAO JARAGUA"
+    ],
     "regiao": "Zona Oeste"
-  },
-  "ESTACAO JARAGUA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "VILA ZATT": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
   },
   "PQUE DE TAIPAS": {
     "pseudonimos": [],
@@ -1993,33 +1911,24 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD ELIS MARIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "BOM RETIRO": {
     "pseudonimos": [],
     "regiao": "Centro"
   },
   "JD GUARANI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD GUACURI",
+      "PQ GUARANI"
+    ],
     "regiao": "Zona Norte"
   },
   "TEREZINHA": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "TTVN CACHOEIRINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JD DOS GUEDES": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
-  },
-  "CONEX PETRONIO PORT": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
   },
   "JARDIM CAROMBÉ": {
     "pseudonimos": [],
@@ -2034,11 +1943,9 @@
     "regiao": "Zona Norte"
   },
   "CEMITE DE PERUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "EST DE PERUS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "EST DE PERUS"
+    ],
     "regiao": "Zona Norte"
   },
   "JD.RINCAO": {
@@ -2061,36 +1968,31 @@
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "VILA ROSA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JOVA RURAL": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
   },
-  "ANEHEMBI": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JD SAO JOAO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD S JOAO",
+      "JD SAO JOAO CIRC"
+    ],
     "regiao": "Zona Norte"
   },
   "CEM PQ PINHEIROS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "CEM P PINHEIROS"
+    ],
     "regiao": "Zona Sul"
   },
   "JD JOAMAR": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TATUAPE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA CONSTANÇA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA CONSTANCIA"
+    ],
     "regiao": "Zona Norte"
   },
   "CANTAREIRA": {
@@ -2101,26 +2003,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TUCURUVI": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "VILA CONSTANCIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "VILA AMELIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "CJ DOS BANCARIOS": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "M JD SAO PAUL": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "JD HEBRON": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
@@ -2129,10 +2011,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "PQ VILA MARIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "TIETE": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
@@ -2140,10 +2018,6 @@
   "JD TREMEMBE": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
-  },
-  "CEM P PINHEIROS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
   },
   "MOOCA": {
     "pseudonimos": [],
@@ -2158,7 +2032,10 @@
     "regiao": "Zona Norte"
   },
   "JD MIRIAM": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM MIRIAM",
+      "JD. MIRIAM"
+    ],
     "regiao": "Zona Sul"
   },
   "JD N SRA CAMINHO": {
@@ -2189,15 +2066,7 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METRO A ALVIN": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD PEDRO J NUNES": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METRO A ALVIM": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2225,18 +2094,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "ES CPTM GUAIANAZ": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "ETC GUAIANAZES": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CPTM ITAIM PAULISTA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "CEM DA SAUDADE": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -2245,23 +2102,11 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "EST GUAIANZ CP": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "S ETELVINA II B6": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "INACIO MONTEIRO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD SAO CARLOS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CPTM JOSE BONIFACIO": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2289,10 +2134,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "PQ PAINEIRAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "SHOPPING PENHA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -2301,19 +2142,11 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "SHOP PENHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA JACUI": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "VILA PROGRESSO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "ERM MATARAZZO": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2329,15 +2162,7 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "CONJ JOSE BONIFACIO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD WILMA FLOR": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "EST GUAIANAZES C": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2358,7 +2183,10 @@
     "regiao": "Zona Leste"
   },
   "JD MARILIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM MARILIA",
+      "JD MARILDA"
+    ],
     "regiao": "Zona Leste"
   },
   "COHAB JUSC.KUBISC": {
@@ -2373,39 +2201,11 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METR BRESS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METRO ARTHUR ALVIM": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "COHAB J BONIFACIO": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METR ARTUR ALVIM": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "PQ NOVA SAVOY": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "COHAB JOSE BONIFACIO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD SAO JOAO CIRC": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METRO ARTUR ALVIM": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD S JOAO": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2418,7 +2218,9 @@
     "regiao": "Zona Leste"
   },
   "RECANTO VERDE SOL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "J RECANTO VERDE SOL"
+    ],
     "regiao": "Zona Leste"
   },
   "EST DOM BOSCO": {
@@ -2426,10 +2228,6 @@
     "regiao": "Zona Leste"
   },
   "JD DAS LARANJEIRAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "COHAB PRESTES MAIA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2441,19 +2239,7 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "COHAB BARRO BRANCO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CID.TIRADENTES": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "GLEBA DO PESSEGO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "E T ITAQUERA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2481,10 +2267,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "VL.S FRANCISCO": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
   "PONTE RASA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -2497,10 +2279,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METRO V MATILDE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA SILVIA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -2510,11 +2288,10 @@
     "regiao": "Zona Leste"
   },
   "METRO GUILHERMINA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METR V MATI": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METR GUILHERM",
+      "METR GUILHERMINA"
+    ],
     "regiao": "Zona Leste"
   },
   "JD BELEM": {
@@ -2525,12 +2302,10 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METR GUILHERMINA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "UNIAO DE V NOVA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "UNIAO DE VILA NOVA"
+    ],
     "regiao": "Zona Leste"
   },
   "CONJ ARAUCARIA": {
@@ -2549,16 +2324,14 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "PQ GUARANI": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "JD KERALUX": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "PQ SAO RAFAEL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SAO RAFAEL"
+    ],
     "regiao": "Zona Leste"
   },
   "VILA GUARANI": {
@@ -2566,50 +2339,26 @@
     "regiao": "Zona Sul"
   },
   "JD ITAPOLIS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "J RECANTO VERDE SOL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM ITAPOLIS"
+    ],
     "regiao": "Zona Leste"
   },
   "ALTO ALEGRE": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "TERM SÃO MATEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "METRO TAMANDUA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO TAMANDUATEI"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA SANTA ISABEL": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "METRO VL MATILDE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VL ARICANDUVA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METRO V MATILD": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "CIDADE LIDER": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METR GUILHERM": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "M.GUILHERMINA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2626,14 +2375,12 @@
     "regiao": "Zona Leste"
   },
   "JD STA TEREZINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD SANTA TEREZINHA"
+    ],
     "regiao": "Zona Leste"
   },
   "VILA NHOCUNE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "UNIAO DE VILA NOVA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -2646,16 +2393,10 @@
     "regiao": "Zona Leste"
   },
   "METRO ANA ROSA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO ANA ROS"
+    ],
     "regiao": "Zona Sul"
-  },
-  "VILA CALIFORNIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "VL CALIFORNIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
   },
   "VILA ALPINA": {
     "pseudonimos": [],
@@ -2665,29 +2406,9 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TERM.SAPOPEMBA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "SHOP MET.TATUAPE": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA ARAPUA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
-  },
-  "JARDIM ITAPOLIS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "HOSP HELIOPOLIS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "SAO RAFAEL": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
   },
   "NOVE DE JULHO": {
     "pseudonimos": [],
@@ -2710,7 +2431,9 @@
     "regiao": "Zona Leste"
   },
   "PQ STA MADALENA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "STA MADALENA"
+    ],
     "regiao": "Zona Leste"
   },
   "CENTRAL PLAZ S": {
@@ -2741,25 +2464,19 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METRO TAMANDUATEI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "VILA CONDE DO PINHAL": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
   "PQ SAO LUCAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQUE S LUCAS"
+    ],
     "regiao": "Zona Leste"
   },
   "MASC.MORAES": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
-  },
-  "SHOP.ARICANDUVA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
   },
   "HOSP.SAPOPEMBA": {
     "pseudonimos": [],
@@ -2773,15 +2490,7 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "JARDIM MIRIAM": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "CIDADE VARGAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD GUACURI": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -2790,7 +2499,9 @@
     "regiao": "Zona Sul"
   },
   "JD LUSO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD. LUSO"
+    ],
     "regiao": "Zona Sul"
   },
   "JD SAO JORGE": {
@@ -2798,7 +2509,10 @@
     "regiao": "Zona Sul"
   },
   "SHOPPING INTERLAGOS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "SHOP INTERLAGO",
+      "SHOP INTERLAGOS"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA STA MARGARIDA": {
@@ -2806,7 +2520,9 @@
     "regiao": "Zona Sul"
   },
   "VILA MISSIONARIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "V. MISSIONARIA"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA GUACURI": {
@@ -2818,7 +2534,9 @@
     "regiao": "Zona Sul"
   },
   "JD SELMA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD. SELMA"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA IMPERIO": {
@@ -2830,7 +2548,11 @@
     "regiao": "Zona Sul"
   },
   "COLEGIO SANTA MARIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "COL STA MARIA",
+      "COLEGIO STA. MARIA",
+      "COLG STA MARIA"
+    ],
     "regiao": "Zona Sul"
   },
   "VILA SANTA CATARINA": {
@@ -2841,24 +2563,14 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "V. MISSIONARIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD. MIRIAM": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "PEDREIRA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PQ PRIMAVERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "ESTAÇAO JURUBATUBA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "EST JURUBATUBA"
+    ],
     "regiao": "Zona Sul"
   },
   "TERM GRAJAU": {
@@ -2866,11 +2578,16 @@
     "regiao": "Zona Sul"
   },
   "JARDIM GAIVOTAS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD GAIVOTA",
+      "JD GAIVOTAS"
+    ],
     "regiao": "Zona Sul"
   },
   "JARDIM NORONHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD NORONHA"
+    ],
     "regiao": "Zona Sul"
   },
   "UNISA": {
@@ -2886,7 +2603,15 @@
     "regiao": "Zona Sul"
   },
   "TERM VARGINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T VARGINHA",
+      "TER VARGINHA",
+      "TERM VARGIN",
+      "TERM VARGINH",
+      "TERM. VARGINHA",
+      "TERM.VARGINHA",
+      "TERMINAL VARGINHA"
+    ],
     "regiao": "Zona Sul"
   },
   "EMBURA": {
@@ -2898,7 +2623,12 @@
     "regiao": "Zona Sul"
   },
   "TERM PARELHEIROS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PARELHEIROS",
+      "TERM PARELH",
+      "TERM PARELHEI",
+      "TERM.PARELHEIROS"
+    ],
     "regiao": "Zona Sul"
   },
   "CIPO MEIO": {
@@ -2913,15 +2643,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TERM PARELH": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "BARRAGEM": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM PARELHEI": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -2945,10 +2667,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD NORONHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD PORTO VELHO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -2957,15 +2675,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PARELHEIROS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "ESTRADA DO JUSA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERMINAL VARGINHA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -2982,15 +2692,9 @@
     "regiao": "Zona Sul"
   },
   "JD ITAJAI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD.ITAJAI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM.VARGINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD.ITAJAI"
+    ],
     "regiao": "Zona Sul"
   },
   "J SETE SETEMBRO": {
@@ -3009,14 +2713,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "SHOP INTERLAGO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PQ SANTA CECILIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "VILA NATAL": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -3029,19 +2725,11 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD MARILDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD CASTRO ALVES": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
   "JD VARGINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TER VARGINHA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3057,10 +2745,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TERM. VARGINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD IPORA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -3069,27 +2753,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD SANTA TEREZINHA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM VARGIN": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD GAIVOTAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "EST JURUBATUBA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD REC CAMPO BELO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "T VARGINHA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3109,23 +2773,13 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "SHOP INTERLAGOS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD ELIANA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JARDIM ELIANA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD CHACARA DO SOL": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM VARGINH": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD DAS PEDRAS": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3141,32 +2795,28 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD GAIVOTA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "COOPERPAM": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
   "T JD ANGELA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD ANGELA",
+      "TERM J ANGELA",
+      "TERM JD ANGELA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD HORIZONTE AZUL": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM JD ANGELA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD HORIZON AZUL"
+    ],
     "regiao": "Zona Sul"
   },
   "PARQUE DO LAGO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PQ DO LAGO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ DO LAGO"
+    ],
     "regiao": "Zona Sul"
   },
   "JD UNIVERSAL": {
@@ -3174,14 +2824,12 @@
     "regiao": "Zona Sul"
   },
   "JD RIVIERA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "RIVIERA"
+    ],
     "regiao": "Zona Sul"
   },
   "JARDIM IRENE": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD ANGELA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3209,16 +2857,10 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "RIVIERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD GILDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "V GILDA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "V GILDA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD MACEDONIA": {
@@ -3226,14 +2868,6 @@
     "regiao": "Zona Sul"
   },
   "HOSP CAMPO LIMPO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD MITSUTANI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERMINAL CAPELINHA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3258,7 +2892,9 @@
     "regiao": "Zona Sul"
   },
   "JD CAPELINHA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD CAPELA"
+    ],
     "regiao": "Zona Sul"
   },
   "JD STO EDUARDO": {
@@ -3266,7 +2902,10 @@
     "regiao": "Zona Sul"
   },
   "CAPAO REDONDO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "M CAPAO REDON",
+      "M CAPAO REDONDO"
+    ],
     "regiao": "Zona Sul"
   },
   "JD SAO BENTO NOVO": {
@@ -3285,27 +2924,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD GUARUJA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD CAPELA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD VERA CRUZ": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "M CAPAO REDONDO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD HORIZON AZUL": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "M CAPAO REDON": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3334,7 +2953,9 @@
     "regiao": "Zona Sul"
   },
   "METRO CAMPO LIMPO": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "METRO CAMPO LIMP"
+    ],
     "regiao": "Zona Sul"
   },
   "HORTO DO YPE": {
@@ -3346,7 +2967,9 @@
     "regiao": "Zona Sul"
   },
   "PARAISOPOLIS": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PARAISAPOLIS"
+    ],
     "regiao": "Zona Sul"
   },
   "PQ ARARIBA": {
@@ -3373,10 +2996,6 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "PARAISAPOLIS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "ESTAÇAO MORUMBI": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -3389,23 +3008,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "SHOPPING MORUMBI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "SANT0 AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "PQ IPE": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "JD GUARAU": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "METRO CAMPO LIMP": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3430,24 +3033,14 @@
     "regiao": "Zona Sul"
   },
   "PAISSANDU": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "LGO PAISSANDU"
+    ],
     "regiao": "Centro"
   },
   "BRASILANDIA": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
-  },
-  "CON PETRON PORT": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "PRAÇA RAMOS DE AZEVEDO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "PQ MORRO DOCE": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "ANHANGUERA": {
     "pseudonimos": [],
@@ -3457,33 +3050,9 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "SHOP IBIRAPUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "VILA BRASILANDIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "CID DABRIL 3 GLEBA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "PC RAMOS AZ": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "CID PIRITUBA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
   "COHAB PEDRA VERDE": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
-  },
-  "LGO PAISSANDU": {
-    "pseudonimos": [],
-    "regiao": "Centro"
   },
   "LGO DO PAISSANDU": {
     "pseudonimos": [],
@@ -3505,10 +3074,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METRO ANA ROS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "PCA PRINC ISABEL": {
     "pseudonimos": [],
     "regiao": "Centro"
@@ -3518,24 +3083,14 @@
     "regiao": "Zona Norte"
   },
   "TERM P ISABEL": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "MET SANTANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
-  },
-  "METRO SANTA CECIL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "T P ISABEL"
+    ],
     "regiao": "Centro"
   },
   "ANA ROSA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
-  },
-  "BUTANTA- USP": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "IMIRIM": {
     "pseudonimos": [],
@@ -3549,17 +3104,9 @@
     "pseudonimos": [],
     "regiao": "Centro"
   },
-  "PCA DA REPUBLICA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "METRO BRAS": {
     "pseudonimos": [],
     "regiao": "Centro"
-  },
-  "METRO V MADALENA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "N SRA FATIMA": {
     "pseudonimos": [],
@@ -3581,10 +3128,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "TER P D PEDRO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA ROBERTINA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -3601,32 +3144,14 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "T VILA CARRAO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "METRO VL MADALENA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "PQUE S LUCAS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "STA MADALENA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "VILA EMA": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "PÇ REPUBLICA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "PÇA J MENDES": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PCA JOAO MENDES"
+    ],
     "regiao": "Centro"
   },
   "JD DA SAUDE": {
@@ -3645,55 +3170,22 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "TERM. SACOMA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "MOEMA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
   "TERM MERCADO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "TERMINAL MERCADO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "T.PRINC.ISABEL": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TERM.MERCADO",
+      "TERMINAL MERCADO"
+    ],
     "regiao": "Centro"
   },
   "PCA.ALMEIDA JR.": {
     "pseudonimos": [],
     "regiao": "Centro"
   },
-  "MUSEU DO IPIRANGA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM.MERCADO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "J SELMA VIA JOANIZA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "T P ISABEL": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "TERM. PRINC. ISABEL": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "LGO.SAO FRANCISCO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "JD. SELMA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3709,20 +3201,14 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PCA. DA SE": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "BALNEARIO S FRANCISCO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "LGO S FRANCISCO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "J S JORGE AT J APURA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "JD S JORGE ATÉ APURA"
+    ],
     "regiao": "Zona Sul"
   },
   "L S FCISC": {
@@ -3733,27 +3219,14 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PCA JOAO MENDES": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "JD. LUSO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "TERMINAL STO AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "COLEGIO STA. MARIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "TER STO AMARO",
+      "TERMIN STO AMARO"
+    ],
     "regiao": "Zona Sul"
   },
   "PRACA JOAO MENDES": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "LGO S FRANCIS": {
     "pseudonimos": [],
     "regiao": "Centro"
   },
@@ -3762,31 +3235,19 @@
     "regiao": "Zona Sul"
   },
   "VL. GOMES": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "VILA GOMES"
+    ],
     "regiao": "Zona Oeste"
-  },
-  "SHOPP MORUMBI": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM. BANDEIRA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
   },
   "MOBI BRASI": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JARDIM ELIANA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PRACA DA SE": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "PQ RES COCAIA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "PQ RESID COCAIA"
+    ],
     "regiao": "Zona Sul"
   },
   "DETRAN": {
@@ -3801,23 +3262,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "COLG STA MARIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PQ RESID COCAIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "MTO JABAQUARA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD HERPLIN": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "METRO PC DA ARVORE": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3825,19 +3270,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METRO PC ARVO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "TERM.PARELHEIROS": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "MENDES": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "COL STA MARIA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3849,15 +3282,7 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "VILA GILDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD HERCULA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PQ STO ANTONIO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
@@ -3893,14 +3318,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "T.STO AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "M.SANTA CRUZ": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD JACIRA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -3913,10 +3330,6 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TER STO AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "JD MARACA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -3925,29 +3338,11 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "METRO PÇA DA ARVORE": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
   "E. T. AGUA ESPRAIADA": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "E T AGUA ESPRAIADA"
+    ],
     "regiao": "Zona Sul"
-  },
-  "TERM J ANGELA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "VIP GUARAPIRANGA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "LGO SAO FRANCISCO": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "TERM.BANDEIRA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
   },
   "JD BONFIGLIOLI": {
     "pseudonimos": [],
@@ -3957,25 +3352,11 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "JD MA LUIZA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "LGO DA POLVORA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "ESTACAO DA LUZ": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "PC RAMOS DE AZEV": {
-    "pseudonimos": [],
+    "pseudonimos": [
+      "P RAMOS DE AZEVE"
+    ],
     "regiao": "Centro"
-  },
-  "COH RAP TAVARES": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "TER PRINC ISAB": {
     "pseudonimos": [],
@@ -3989,29 +3370,9 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "JD D ABRIL": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "VILA GOMES": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
-  "PAULISTA": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
   "PCA R D AZEVEDO": {
     "pseudonimos": [],
     "regiao": "Centro"
-  },
-  "P RAMOS DE AZEVE": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "SHOP CONTINENTAL": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "ANHANGABAU": {
     "pseudonimos": [],
@@ -4021,32 +3382,10 @@
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "PQ DOM PEDRO": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "V CRUZEIRO": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
   },
-  "TERMIN STO AMARO": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "MORUMBI SHOPPING": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "EST LUZ": {
-    "pseudonimos": [],
-    "regiao": "Centro"
-  },
-  "M SANTA CECILIA": {
-    "pseudonimos": [
-      "METRO SANTA"
-    ],
-    "regiao": "Centro"
-  },  
   "CJ MANOEL DA NOBREGA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
@@ -4067,10 +3406,6 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "PQ CONTINENAL": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
-  },
   "CDHU BUTANTA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
@@ -4082,22 +3417,6 @@
   "ANHE": {
     "pseudonimos": [],
     "regiao": "Zona Norte"
-  },
-  "JARDIM MARILIA": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "JD S JORGE ATÉ APURA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "PQ IBIRAPUERA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
-  },
-  "E T AGUA ESPRAIADA": {
-    "pseudonimos": [],
-    "regiao": "Zona Sul"
   },
   "TERM STO AM": {
     "pseudonimos": [],
@@ -4114,10 +3433,6 @@
   "PRODATA": {
     "pseudonimos": [],
     "regiao": "Centro"
-  },
-  "TERM RODOVIARIO TIETE": {
-    "pseudonimos": [],
-    "regiao": "Zona Norte"
   },
   "CIRCULAR - G.P. SP": {
     "pseudonimos": [],
