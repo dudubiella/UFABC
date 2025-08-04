@@ -9,13 +9,6 @@
     ],
     "regiao": "Zona Leste"
   },
-  "TERM P D PED": {
-    "pseudonimos": [
-      "TERM P D PEDRO",
-      "TERM P D PEDRO II"
-    ],
-    "regiao": "Zona Leste"
-  },
   "TERM BANDEIR": {
     "pseudonimos": [
       "TERM BANDEIRA"
@@ -38,12 +31,26 @@
   },
   "PQ D PEDRO": {
     "pseudonimos": [
+      "T.PQ D.PEDROII",
+      "PARQUE D. PEDRO II",
       "PQ D PEDRO II",
       "T PQ D PEDRO",
       "T PQ D PEDRO II",
       "TER PQ D PEDRO",
       "TERM PQ D PEDRO",
-      "TERM PQ D PEDRO II"
+      "TERM PQ D PEDRO II",
+      "TERM P D PED",
+      "TERM P D PEDRO",
+      "TERM P D PEDRO II",
+      "T PARQUE D P II",
+      "TERM PQ D PEDR",
+      "T P D PEDRO",
+      "T P D PEDRO II",
+      "T PARQUE D P II",
+      "TERM.PD PEDRO II",
+      "TERMP Q D PEDRO II",
+      "T.PQ.D.PEDRO II",
+      "T.D.PEDRO II"
     ],
     "regiao": "Zona Leste"
   },
@@ -77,14 +84,17 @@
   },
   "BARRA FUNDA": {
     "pseudonimos": [
+      "TERM BARRA FUNDA",
       "M BARRA FUN",
       "M BARRA FUND",
       "M BARRA FUNDA",
+      "M. BARRA FUNDA",
       "MBARRA FUNDA",
       "MET BARRA FUNDA",
       "METRO BARRA FU",
       "METRO BARRA FUND",
-      "METRO BARRA FUNDA"
+      "METRO BARRA FUNDA",
+      "METRO B FUNDA"
     ],
     "regiao": "Zona Oeste"
   },
@@ -132,13 +142,6 @@
       "TERM CORREIO"
     ],
     "regiao": "Centro"
-  },
-  "TERM PQ D PEDR": {
-    "pseudonimos": [
-      "TERM PQ D PEDRO",
-      "TERM PQ D PEDRO II"
-    ],
-    "regiao": "Zona Leste"
   },
   "METRO TUCUR": {
     "pseudonimos": [
@@ -330,12 +333,6 @@
     ],
     "regiao": "Zona Sul"
   },
-  "T P D PEDRO": {
-    "pseudonimos": [
-      "T P D PEDRO II"
-    ],
-    "regiao": "Zona Leste"
-  },
   "METRO CONC": {
     "pseudonimos": [
       "METRO CONCEICAO",
@@ -360,7 +357,9 @@
   },
   "AUTODROMO": {
     "pseudonimos": [
-      "ESTACAO AUTODROMO"
+      "ESTACAO AUTODROMO",
+      "AUTÓDROMO",
+      "CPTM AUTODROMO"
     ],
     "regiao": "Zona Sul"
   },
@@ -519,10 +518,6 @@
     "regiao": "Zona Leste"
   },
   "TERM S MATEUS": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "TERM.PD PEDRO II": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -947,10 +942,6 @@
     "regiao": "Zona Leste"
   },
   "TER SAO MIGUEL": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "TERMP Q D PEDRO II": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
@@ -1658,10 +1649,6 @@
     "pseudonimos": [],
     "regiao": "Zona Oeste"
   },
-  "PARQUE D. PEDRO II": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "CID.UNIVERSITARIA": {
     "pseudonimos": [],
     "regiao": "Zona Oeste"
@@ -1737,10 +1724,6 @@
   "METR V MARIANA": {
     "pseudonimos": [],
     "regiao": "Zona Sul"
-  },
-  "M. BARRA FUNDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "VILA ANASTACIO": {
     "pseudonimos": [],
@@ -2017,10 +2000,6 @@
   "BOM RETIRO": {
     "pseudonimos": [],
     "regiao": "Centro"
-  },
-  "METRO B FUNDA": {
-    "pseudonimos": [],
-    "regiao": "Zona Oeste"
   },
   "JD GUARANI": {
     "pseudonimos": [],
@@ -3610,10 +3589,6 @@
     "pseudonimos": [],
     "regiao": "Zona Leste"
   },
-  "T.PQ D.PEDROII": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
   "PQ BELEM": {
     "pseudonimos": [],
     "regiao": "Zona Leste"
@@ -3685,14 +3660,6 @@
   "TERMINAL MERCADO": {
     "pseudonimos": [],
     "regiao": "Centro"
-  },
-  "T.PQ.D.PEDRO II": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
-  },
-  "T.D.PEDRO II": {
-    "pseudonimos": [],
-    "regiao": "Zona Leste"
   },
   "T.PRINC.ISABEL": {
     "pseudonimos": [],
@@ -4075,6 +4042,88 @@
     "regiao": "Centro"
   },
   "M SANTA CECILIA": {
+    "pseudonimos": [
+      "METRO SANTA"
+    ],
+    "regiao": "Centro"
+  },  
+  "CJ MANOEL DA NOBREGA": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "JD UBIRAJARA": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "MOEMA CIRCULAR": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "JD LOURDES": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "SHOP VILA LOBOS": {
+    "pseudonimos": [],
+    "regiao": "Zona Oeste"
+  },
+  "PQ CONTINENAL": {
+    "pseudonimos": [],
+    "regiao": "Zona Oeste"
+  },
+  "CDHU BUTANTA": {
+    "pseudonimos": [],
+    "regiao": "Zona Oeste"
+  },
+  "TERMINAL RODOVIARIO TIETE": {
+    "pseudonimos": [],
+    "regiao": "Zona Norte"
+  },
+  "ANHE": {
+    "pseudonimos": [],
+    "regiao": "Zona Norte"
+  },
+  "JARDIM MARILIA": {
+    "pseudonimos": [],
+    "regiao": "Zona Leste"
+  },
+  "JD S JORGE ATÉ APURA": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "PQ IBIRAPUERA": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "E T AGUA ESPRAIADA": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "TERM STO AM": {
+    "pseudonimos": [],
+    "regiao": "Zona Sul"
+  },
+  "TRANSPPASS": {
+    "pseudonimos": [],
+    "regiao": "Zona Oeste"
+  },
+  "SPTRANS": {
+    "pseudonimos": [],
+    "regiao": "Centro"
+  },
+  "PRODATA": {
+    "pseudonimos": [],
+    "regiao": "Centro"
+  },
+  "TERM RODOVIARIO TIETE": {
+    "pseudonimos": [],
+    "regiao": "Zona Norte"
+  },
+  "CIRCULAR - G.P. SP": {
+    "pseudonimos": [],
+    "regiao": "Centro"
+  },
+  "FAC UNINOVE": {
     "pseudonimos": [],
     "regiao": "Centro"
   }

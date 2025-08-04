@@ -7,6 +7,7 @@ from pathlib import Path
 from community import community_louvain
 import numpy as np
 import matplotlib.colors as mcolors
+import os
 
 # -------- Configurações e caminhos --------
 
@@ -192,23 +193,25 @@ def analisar_mundo_pequeno(G):
     print(f"Coeficiente de Clusterização Médio: {clustering:.4f}")
     print(f"Caminho Médio entre Nós: {path_length:.4f}")
 
-def plotar_distribuicao_grau(G):
+def plotar_distribuicao_grau(G, nome_rede):
     graus = [G.degree(n) for n in G.nodes()]
     plt.figure(figsize=(8,5))
     plt.hist(graus, bins=30, color="cornflowerblue")
-    plt.title("Distribuição de Grau")
+    plt.title(f"Distribuição de Grau - {nome_rede}")
     plt.xlabel("Grau")
     plt.ylabel("Frequência")
     plt.grid(True)
+    plt.savefig(f"Q4/CR/Graficos/distribuicao_grau_{nome_rede}.png")
     plt.show()
 
     plt.figure(figsize=(8,5))
     grau_series = pd.Series(graus).value_counts().sort_index()
     plt.loglog(grau_series.index, grau_series.values, 'o', color='darkred')
-    plt.title("Distribuição de Grau (Escala Log-Log)")
+    plt.title(f"Distribuição de Grau (Escala Log-Log) - {nome_rede}")
     plt.xlabel("Grau (k)")
     plt.ylabel("P(k)")
     plt.grid(True)
+    plt.savefig(f"Q4/CR/Graficos/distribuicao_loglog_{nome_rede}.png")
     plt.show()
 
 def calcular_assortatividade(G):
@@ -223,7 +226,7 @@ def calcular_assortatividade(G):
     else:
         print("A rede não apresenta tendência de assortatividade.")
 
-def detectar_comunidades(G):
+def detectar_comunidades(G, nome_rede):
     G_und = G.to_undirected()
     particao = community_louvain.best_partition(G_und)
     num_comunidades = max(particao.values()) + 1
@@ -239,11 +242,12 @@ def detectar_comunidades(G):
     plt.figure(figsize=(12,8))
     nx.draw_networkx_nodes(G_und, pos, node_color=cores, node_size=100)
     nx.draw_networkx_edges(G_und, pos, alpha=0.4)
-    plt.title("Comunidades Detectadas (Louvain)")
+    plt.title(f"Comunidades Detectadas (Louvain) - {nome_rede}")
     plt.axis("off")
+    plt.savefig(f"Q4/CR/Graficos/comunidades_{nome_rede}.png")
     plt.show()
 
-def analisar_robustez(G, proporcao=0.1):
+def analisar_robustez(G, nome_rede, proporcao=0.1):
     G_und = G.to_undirected()
     n_remover = int(len(G_und.nodes()) * proporcao)
 
@@ -280,14 +284,69 @@ def analisar_robustez(G, proporcao=0.1):
     plt.plot(range(n_remover), comp_dirigido, label="Ataque Direcionado (Hubs)")
     plt.xlabel("Nós Removidos")
     plt.ylabel("Tamanho do Maior Componente")
-    plt.title("Robustez da Rede")
+    plt.title(f"Robustez da Rede - {nome_rede}")
     plt.legend()
     plt.grid(True)
+    plt.savefig(f"Q4/CR/Graficos/robustez_{nome_rede}.png")
     plt.show()
+
+def analisar_grafo_completo(n, metricas):
+    print(f"\nGrau de Entrada Ponderado (exemplo das {n} maiores estações):")
+    for no, val in sorted(metricas["grau_entrada_ponderado"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.2f}")
+
+    print(f"\nGrau de Saída Ponderado (exemplo das {n} maiores estações):")
+    for no, val in sorted(metricas["grau_saida_ponderado"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.2f}")
+
+    print(f"\nCentralidade PageRank (exemplo das {n} maiores estações):")
+    for no, val in sorted(metricas["pagerank"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.4f}")
+    
+    print(f"\nCentralidade de Grau (Top {n}):")
+    for no, val in sorted(metricas["grau"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.4f}")
+
+    print(f"\nCentralidade de Intermediação (Top {n}):")
+    for no, val in sorted(metricas["intermediacao"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.4f}")
+
+    print(f"\nCentralidade de Proximidade (Top {n}):")
+    for no, val in sorted(metricas["proximidade"].items(), key=lambda x: x[1], reverse=True)[:n]:
+        print(f" - {no}: {val:.4f}")
+
+    if metricas["autovetor"]:
+        print(f"\nCentralidade de Autovetor (Top {n}):")
+        for no, val in sorted(metricas["autovetor"].items(), key=lambda x: x[1], reverse=True)[:n]:
+            print(f" - {no}: {val:.4f}")
+
+def analisar_grafo(G, nome, n):
+    metricas = calcular_metricas(G)
+
+    print(f"\nAnálise do {nome} com {G.number_of_nodes()} nós e {G.number_of_edges()} arestas:")
+
+    print(f"\nDensidade do grafo: {metricas['densidade']:.6f}")
+
+    if metricas["diametro"] is not None:
+        print(f"\nDiâmetro do grafo direcionado (número máximo de baldeações): {metricas['diametro']}")
+        caminho_formatado = " -> ".join(metricas["caminho_diametro"])
+        print(f"Caminho do diâmetro ({metricas['diametro']} arestas):\n{caminho_formatado}")
+    else:
+        print("Diâmetro não foi calculado.")
+
+    analisar_grafo_completo(n, metricas)
+
+    analisar_mundo_pequeno(G)
+    plotar_distribuicao_grau(G, nome)
+    calcular_assortatividade(G)
+    detectar_comunidades(G, nome)
+    analisar_robustez(G, nome, proporcao=0.1)
+
+    print(f"\nAnálise do {nome} finalizada.\n")
 
 # -------- Visualização --------
 
-def desenhar_grafo(G, grau_minimo=None):
+def desenhar_grafo(G, titulo = "Grafo Total Direcionado das Linhas de Ônibus (Pesos = Passageiros)"):
     plt.figure(figsize=(14,10))
     pos = nx.spring_layout(G, seed=42)  # Para consistência na disposição dos nós
 
@@ -319,11 +378,15 @@ def desenhar_grafo(G, grau_minimo=None):
     edge_labels = nx.get_edge_attributes(G, 'weight')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=7)
 
-    titulo = "Grafo Direcionado das Linhas de Ônibus (Pesos = Passageiros)"
-    if grau_minimo is not None:
-        titulo += f" | Grau mínimo: {grau_minimo}"
     plt.title(titulo)
     plt.axis('off')
+    
+    # Salvar gráfico na pasta "Graficos"
+    os.makedirs("Graficos", exist_ok=True)
+    nome_arquivo = f"Q4/CR/Graficos/{titulo.replace(' ', '_')}.png"
+    plt.savefig(nome_arquivo, bbox_inches='tight', dpi=300)
+    print(f"Gráfico salvo em: {nome_arquivo}")
+    
     plt.show()
 
 # -------- Carregamento de terminais unificados com região --------
@@ -411,6 +474,29 @@ def salvar_terminais_unificados(terminais_unificados):
     with open(ARQUIVO_TERMINAIS_UNIFICADOS, "w", encoding="utf-8") as f:
         json.dump(copia, f, indent=2, ensure_ascii=False)
 
+# -------- Grafos sobre as Regiões --------
+
+def construir_grafo_entre_regioes(G, dict_regioes):
+    G_regioes = nx.DiGraph()
+
+    # Adiciona nós para cada região
+    for regiao in dict_regioes:
+        G_regioes.add_node(regiao)
+
+    # Soma os passageiros (pesos das arestas de G) entre as regiões
+    for u, v, data in G.edges(data=True):
+        reg_u = G.nodes[u].get("regiao", "Indefinido")
+        reg_v = G.nodes[v].get("regiao", "Indefinido")
+
+        peso = data.get("weight", 1)  # ou "peso" se ainda estiver usando esse nome
+
+        if not G_regioes.has_edge(reg_u, reg_v):
+            G_regioes.add_edge(reg_u, reg_v, weight=peso)
+        else:
+            G_regioes[reg_u][reg_v]["weight"] += peso
+
+    return G_regioes
+
 # -------- Função principal --------
 
 def main():
@@ -438,53 +524,31 @@ def main():
 
     desenhar_grafo(G_analisado)
 
-    metricas = calcular_metricas(G_analisado)
+    analisar_grafo(G_analisado, "Grafo Completo", 10)
 
-    print(f"\nDensidade do grafo: {metricas['densidade']:.6f}")
+    # 1. Construir dicionário de regiões: região → lista de estações
+    dict_regioes = {}
+    for no, dados in G_filtrado.nodes(data=True):
+        regiao = dados.get("regiao", "Indefinido")
+        if regiao not in dict_regioes:
+            dict_regioes[regiao] = []
+        dict_regioes[regiao].append(no)
 
-    if metricas["diametro"] is not None:
-        print(f"\nDiâmetro do grafo direcionado (número máximo de baldeações): {metricas['diametro']}")
-        caminho_formatado = " -> ".join(metricas["caminho_diametro"])
-        print(f"Caminho do diâmetro ({metricas['diametro']} arestas):\n{caminho_formatado}")
-    else:
-        print("Diâmetro não foi calculado.")
+    # 2. Construir grafo entre regiões
+    print("\nConstruindo grafo entre regiões...")
+    G_regioes = construir_grafo_entre_regioes(G_filtrado, dict_regioes)
+    desenhar_grafo(G_regioes, titulo="Grafo Entre Regiões")
+    analisar_grafo(G_regioes, "Grafo Entre Regiões", 5)
+    # Os pesos serão mostrados diretamente no grafo desenhado
 
-    print("\nGrau de Entrada Ponderado (exemplo das 10 maiores estações):")
-    for no, val in sorted(metricas["grau_entrada_ponderado"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.2f}")
-
-    print("\nGrau de Saída Ponderado (exemplo das 10 maiores estações):")
-    for no, val in sorted(metricas["grau_saida_ponderado"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.2f}")
-
-    print("\nCentralidade PageRank (exemplo das 10 maiores estações):")
-    for no, val in sorted(metricas["pagerank"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.4f}")
-    
-    print("\nCentralidade de Grau (Top 10):")
-    for no, val in sorted(metricas["grau"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.4f}")
-
-    print("\nCentralidade de Intermediação (Top 10):")
-    for no, val in sorted(metricas["intermediacao"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.4f}")
-
-    print("\nCentralidade de Proximidade (Top 10):")
-    for no, val in sorted(metricas["proximidade"].items(), key=lambda x: x[1], reverse=True)[:10]:
-        print(f" - {no}: {val:.4f}")
-
-    if metricas["autovetor"]:
-        print("\nCentralidade de Autovetor (Top 10):")
-        for no, val in sorted(metricas["autovetor"].items(), key=lambda x: x[1], reverse=True)[:10]:
-            print(f" - {no}: {val:.4f}")
-
-    analisar_mundo_pequeno(G_analisado)
-    plotar_distribuicao_grau(G_analisado)
-    calcular_assortatividade(G_analisado)
-    detectar_comunidades(G_analisado)
-    analisar_robustez(G_analisado, proporcao=0.1)
-
-    print("\nAnálise finalizada.\n")
+    # 3. Construir subgrafos por região
+    print("\nConstruindo subgrafos por região...")
+    for regiao, lista_nos in dict_regioes.items():
+        subgrafo = G_filtrado.subgraph(lista_nos).copy()
+        
+        print(f"\nRegião {regiao} — {len(subgrafo.nodes())} nós e {len(subgrafo.edges())} arestas.")
+        desenhar_grafo(subgrafo, titulo=f"Subgrafo da Região {regiao}")
+        analisar_grafo(subgrafo, f"Subgrafo da Região {regiao}", 10)
 
 if __name__ == "__main__":
     main()
