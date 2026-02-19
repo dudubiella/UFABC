@@ -78,8 +78,8 @@ int main () {
 
     cout << *min_elemento(xs, xs + 10) << '\n';
 
-//    selsort (xs, xs + 10);
-    selsort (begin(xs), end(xs));
+    selsort (xs, xs + 10);
+//    selsort (begin(xs), end(xs));
     for (int x: xs) cout << x << ' ';
 
     return 0;
