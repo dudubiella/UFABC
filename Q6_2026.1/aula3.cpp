@@ -25,7 +25,7 @@ size_t partition(int *p, size_t b, size_t e) {
             std::swap(p[k], p[i]);
         }
     }
-    std::swap(x, p[i]);
+    std::swap(p[b], p[i]);
     return i;
 }
 
@@ -38,7 +38,7 @@ int *partition(int *b, int *e) {
             std::swap(*k, *i);
         }
     }
-    *b = *i; *i = x;
+    std::swap(*b, *i);
     return i;
 }
 
